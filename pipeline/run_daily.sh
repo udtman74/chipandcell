@@ -7,7 +7,10 @@ mkdir -p logs
 {
   echo "=== $(date '+%F %T') start ==="
   # Gemini 키: kr-screener 로컬 .env 재사용(있으면). 없으면 Ollama 폴백.
-  [ -f ~/kr-stock-screener/.env ] && export $(grep -E '^GEMINI_API_KEY=' ~/kr-stock-screener/.env | xargs) 2>/dev/null
+  if [ -f ~/kr-stock-screener/.env ]; then
+    _gk=$(grep -E '^GEMINI_API_KEY=' ~/kr-stock-screener/.env | head -1)
+    [ -n "$_gk" ] && export "$_gk"
+  fi
   git pull --rebase origin main
   PY=.venv/bin/python
   [ -x "$PY" ] || PY=python3

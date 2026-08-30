@@ -54,9 +54,16 @@ def run():
             "bottom": rank[-3:],
         }
     market = {}
-    for key, sym in (("kospi", "KS11"), ("kosdaq", "KQ11")):
-        m = compute(fdr.DataReader(sym))
-        market[key] = {"close": m["close"], "pct": m["pct"], "r20": m["r20"]}
+    # KS11/KQ11(네이버 경로)은 미니에서 빈 DF를 반환하는 사례가 있어 야후(^) 폴백
+    for key, syms in (("kospi", ("KS11", "^KS11")), ("kosdaq", ("KQ11", "^KQ11"))):
+        for sym in syms:
+            df = fdr.DataReader(sym)
+            if len(df) and "Close" in df.columns:
+                m = compute(df)
+                market[key] = {"close": m["close"], "pct": m["pct"], "r20": m["r20"]}
+                break
+        else:
+            raise SystemExit(f"export aborted: index fetch failed for {key} ({syms})")
     os.makedirs(OUT, exist_ok=True)
     for name, payload in (("stocks", {"asof": asof, "stocks": stocks}),
                           ("sectors", {"asof": asof, "sectors": sectors}),
