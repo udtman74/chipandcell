@@ -6,10 +6,11 @@ LOG=logs/daily_$(date +%Y%m%d).log
 mkdir -p logs
 {
   echo "=== $(date '+%F %T') start ==="
-  # Gemini 키: kr-screener 로컬 .env 재사용(있으면). 없으면 Ollama 폴백.
+  # Gemini 키: kr-screener 로컬 .env 재사용(GOOGLE_API_KEY 우선, 없으면 GEMINI_FREE_API_KEY).
+  # 못 찾으면 llm.py가 Ollama로 폴백.
   if [ -f ~/kr-stock-screener/.env ]; then
-    _gk=$(grep -E '^GEMINI_API_KEY=' ~/kr-stock-screener/.env | head -1)
-    [ -n "$_gk" ] && export "$_gk"
+    _gk=$(grep -E '^(GOOGLE_API_KEY|GEMINI_FREE_API_KEY)=' ~/kr-stock-screener/.env | head -1 | cut -d= -f2-)
+    [ -n "$_gk" ] && export GEMINI_API_KEY="$_gk"
   fi
   git pull --rebase origin main
   PY=.venv/bin/python
