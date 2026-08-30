@@ -1,0 +1,8 @@
+node_modules/
+dist/
+__pycache__/
+.venv/
+.vercel/
+pipeline/state/
+logs/
+.DS_Store
