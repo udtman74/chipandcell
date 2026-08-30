@@ -96,7 +96,8 @@ def render_post(code, s, analysis, today):
         table, analysis.strip(), DISCLAIMER]) + "\n"
 
 
-def run():
+def run(ticker=None):
+    """ticker 지정 시 로테이션·상태 무시하고 해당 종목 글 생성(특집용)."""
     with open(os.path.join(DATA, "stocks.json")) as f:
         stocks_doc = json.load(f)
     with open(os.path.join(DATA, "sectors.json")) as f:
@@ -106,7 +107,9 @@ def run():
     stocks = stocks_doc["stocks"]
     today = datetime.now().strftime("%Y-%m-%d")
     state = _load_state()
-    code = pick_target(stocks, state, today)
+    code = ticker if ticker else pick_target(stocks, state, today)
+    if code not in stocks:
+        raise SystemExit(f"unknown ticker {code}")
     s = stocks[code]
     out = os.path.join(POSTS, f"{today}-{_slug(s['name_en'])}.md")
     if os.path.exists(out):
@@ -119,9 +122,13 @@ def run():
     os.makedirs(POSTS, exist_ok=True)
     with open(out, "w") as f:
         f.write(render_post(code, s, analysis, today))
-    _save_state(state)
+    if not ticker:
+        _save_state(state)
     print(f"deep dive OK {code} {s['name_en']} -> {os.path.basename(out)}")
 
 
 if __name__ == "__main__":
-    run()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ticker", help="로테이션 무시, 지정 종목 심층 글(상태 미변경)")
+    run(ticker=ap.parse_args().ticker)
