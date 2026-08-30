@@ -1,0 +1,37 @@
+{
+ "asof": "2026-08-28",
+ "sectors": {
+  "semiconductor": {
+   "label": "Semiconductor",
+   "median_r20": 42.83,
+   "advancers": 4,
+   "decliners": 11,
+   "top": [
+    "036930",
+    "403870",
+    "064760"
+   ],
+   "bottom": [
+    "005930",
+    "058470",
+    "399720"
+   ]
+  },
+  "battery": {
+   "label": "Battery",
+   "median_r20": 43.09,
+   "advancers": 8,
+   "decliners": 4,
+   "top": [
+    "066970",
+    "006400",
+    "278280"
+   ],
+   "bottom": [
+    "247540",
+    "373220",
+    "096770"
+   ]
+  }
+ }
+}
