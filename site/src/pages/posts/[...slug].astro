@@ -1,0 +1,34 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+import stocksData from "../../data/stocks.json";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({
+    params: { slug: post.id.replace(/\.md$/, "") },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const t = post.data.ticker;
+const stock = t && stocksData.stocks[t] ? stocksData.stocks[t] : null;
+---
+<Base title={`${post.data.title} | Chip & Cell`} description={post.data.description}>
+  <article>
+    <h1>{post.data.title}</h1>
+    <p class="asof">
+      {post.data.date.toISOString().slice(0, 10)}
+      {post.data.sector && <> · {post.data.sector}</>}
+      {stock && <> · <a href={`/stocks/${t}/`}>{stock.name_en} data page</a></>}
+    </p>
+    <Content />
+    <hr />
+    <p class="asof">
+      Not investment advice. Figures are as of publication and may contain errors —
+      see <a href="/methodology/">methodology</a>.
+    </p>
+  </article>
+</Base>

@@ -1,0 +1,41 @@
+---
+import stocksData from "../data/stocks.json";
+import sectorsData from "../data/sectors.json";
+import { won, pct } from "../lib/fmt.js";
+
+const { sector } = Astro.props;
+const sec = sectorsData.sectors[sector];
+const rows = Object.entries(stocksData.stocks)
+  .filter(([, v]) => v.sector === sector)
+  .sort((a, b) => (b[1].r20 ?? -999) - (a[1].r20 ?? -999));
+---
+<p class="asof">As of {sectorsData.asof} (Seoul close)</p>
+<p>
+  Median 20-day return across the {rows.length} covered names:
+  <strong class={sec.median_r20 > 0 ? "up" : sec.median_r20 < 0 ? "down" : ""}>
+    {(sec.median_r20 > 0 ? "+" : "") + sec.median_r20}%
+  </strong>
+  · {sec.advancers} advancing / {sec.decliners} declining on the last session.
+</p>
+<div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Close</th><th>Day</th><th>20-day</th><th>52w position</th></tr>
+    </thead>
+    <tbody>
+      {rows.map(([code, s]) => {
+        const day = pct(s.pct);
+        const r20 = pct(s.r20);
+        return (
+          <tr>
+            <td><a href={`/stocks/${code}/`}>{s.name_en}</a> <span class="code">{code}</span></td>
+            <td>{won(s.close)}</td>
+            <td><span class={day.cls}>{day.text}</span></td>
+            <td><span class={r20.cls}>{r20.text}</span></td>
+            <td>{s.pos52}%</td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>

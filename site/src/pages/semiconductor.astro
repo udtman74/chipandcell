@@ -1,0 +1,15 @@
+---
+import Base from "../layouts/Base.astro";
+import SectorTable from "../components/SectorTable.astro";
+---
+<Base
+  title="Korean Semiconductor Stocks — Daily Data | Chip & Cell"
+  description="Daily updated table of 15 covered Korean semiconductor stocks on KOSPI/KOSDAQ: Samsung Electronics, SK Hynix, equipment and materials makers. Prices, returns, 52-week positions."
+>
+  <h1>Semiconductor</h1>
+  <p>
+    Korea's flagship export sector: memory giants Samsung Electronics and SK Hynix plus the
+    KOSDAQ equipment, materials and test ecosystem around them. We cover 15 names.
+  </p>
+  <SectorTable sector="semiconductor" />
+</Base>

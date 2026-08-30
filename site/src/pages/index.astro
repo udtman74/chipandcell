@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+import stocksData from "../data/stocks.json";
+import sectorsData from "../data/sectors.json";
+import market from "../data/market.json";
+import { pct } from "../lib/fmt.js";
+
+const sectors = Object.entries(sectorsData.sectors).map(([key, sec]) => {
+  const topCode = sec.top[0];
+  const top = stocksData.stocks[topCode];
+  return { key, sec, topCode, top };
+});
+const allStocks = Object.entries(stocksData.stocks).sort((a, b) =>
+  a[1].name_en.localeCompare(b[1].name_en)
+);
+const kospi = pct(market.kospi.pct);
+const kosdaq = pct(market.kosdaq.pct);
+---
+<Base
+  title="Chip & Cell — Korean Semiconductor & Battery Stocks"
+  description="Focused daily data and deep dives on Korea's two flagship export sectors: 27 semiconductor and battery stocks on KOSPI and KOSDAQ."
+>
+  <h1>Korea's two flagship sectors, in focus</h1>
+  <p>
+    Chip &amp; Cell tracks <strong>27 Korean semiconductor and battery stocks</strong> on KOSPI and
+    KOSDAQ — nothing else. Data pages refresh every trading day; deep dives dig into one name at a time.
+  </p>
+
+  <div class="cards">
+    {sectors.map(({ key, sec, topCode, top }) => {
+      const med = pct(sec.median_r20);
+      return (
+        <div class="card">
+          <h3><a href={`/${key}/`}>{sec.label}</a></h3>
+          <p>Median 20-day return: <span class={med.cls}>{med.text}</span></p>
+          <p>
+            Top mover (20d): <a href={`/stocks/${topCode}/`}>{top.name_en}</a>
+            <span class={pct(top.r20).cls}> {pct(top.r20).text}</span>
+          </p>
+        </div>
+      );
+    })}
+    <div class="card">
+      <h3><a href="/market/">Market</a></h3>
+      <p>KOSPI {market.kospi.close.toLocaleString("en-US")} <span class={kospi.cls}>{kospi.text}</span></p>
+      <p>KOSDAQ {market.kosdaq.close.toLocaleString("en-US")} <span class={kosdaq.cls}>{kosdaq.text}</span></p>
+    </div>
+  </div>
+  <p class="asof">As of {stocksData.asof} (Seoul close)</p>
+
+  <h2>Latest posts</h2>
+  <p>Deep dives and weekly reviews live under <a href="/posts/">Posts</a>.</p>
+
+  <h2>All covered stocks</h2>
+  <ul class="stock-list">
+    {allStocks.map(([code, s]) => (
+      <li><a href={`/stocks/${code}/`}>{s.name_en}</a> <span class="code">{code} · {s.sector}</span></li>
+    ))}
+  </ul>
+</Base>
+<style>
+  .stock-list { columns: 2; padding-left: 1.2rem; }
+  @media (max-width: 600px) { .stock-list { columns: 1; } }
+</style>

@@ -1,0 +1,91 @@
+---
+import Base from "../../layouts/Base.astro";
+import data from "../../data/stocks.json";
+import { won, pct, bil } from "../../lib/fmt.js";
+
+export function getStaticPaths() {
+  return Object.keys(data.stocks).map((code) => ({ params: { code } }));
+}
+
+const { code } = Astro.params;
+const s = data.stocks[code];
+const chg = pct(s.pct);
+const sectorPath = `/${s.sector}/`;
+const peers = Object.entries(data.stocks)
+  .filter(([, v]) => v.sector === s.sector && v.r20 != null)
+  .sort((a, b) => b[1].r20 - a[1].r20);
+const rank = peers.findIndex(([c]) => c === code) + 1;
+const rows = [
+  ["Close", won(s.close)],
+  ["Day change", null, chg],
+  ["Trading value", bil(s.value_bil)],
+  ["MA20 / MA60", `${won(s.ma20)} / ${won(s.ma60)}`],
+  ["5-day return", null, pct(s.r5)],
+  ["20-day return", null, pct(s.r20)],
+  ["60-day return", null, pct(s.r60)],
+].filter(([, v, p]) => v != null || (p && p.text !== "—"));
+const flowRows = s.flow
+  ? [
+      ["Foreign investors", s.flow.foreign_net],
+      ["Institutions", s.flow.inst_net],
+      ["Individuals", s.flow.individual_net],
+    ].filter(([, v]) => v != null)
+  : [];
+const title = `${s.name_en} (${code}) Stock Data — Price, 52-Week Range, Returns`;
+---
+<Base
+  title={title}
+  description={`Daily updated data for ${s.name_en} (KRX ${code}): price, moving averages, 52-week position and returns. Korean ${s.sector} sector.`}
+>
+  <h1>{s.name_en} <span class="code">KRX {code} · {s.name_kr}</span></h1>
+  <p class="asof">As of {s.date} (Seoul close) · <a href={sectorPath}>{s.sector} sector</a></p>
+
+  <h2>Price snapshot</h2>
+  <div class="table-scroll">
+    <table>
+      <tbody>
+        {rows.map(([k, v, p]) => (
+          <tr>
+            <td>{k}</td>
+            <td>{p ? <span class={p.cls}>{p.text}</span> : v}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>52-week range</h2>
+  <p>
+    {won(s.lo52)} — {won(s.hi52)}, currently at the <strong>{s.pos52}%</strong> mark of the range.
+  </p>
+  <div class="bar"><span style={`left:${s.pos52}%`}></span></div>
+
+  {flowRows.length > 0 && (
+    <>
+      <h2>Investor flows (latest session, net shares)</h2>
+      <div class="table-scroll">
+        <table>
+          <tbody>
+            {flowRows.map(([k, v]) => (
+              <tr>
+                <td>{k}</td>
+                <td><span class={v > 0 ? "up" : v < 0 ? "down" : ""}>{(v > 0 ? "+" : "") + v.toLocaleString("en-US")}</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  <h2>Sector standing</h2>
+  <p>
+    Ranked <strong>#{rank}</strong> of {peers.length} covered Korean {s.sector} names by 20-day return.
+    See the full <a href={sectorPath}>{s.sector} sector table</a>.
+  </p>
+
+  <p class="asof">
+    Colors follow Korean market convention: red = up, blue = down.
+    This page is refreshed automatically every trading day.
+  </p>
+</Base>

@@ -1,0 +1,29 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+<Base
+  title="Posts | Chip & Cell"
+  description="Deep dives and weekly reviews on Korean semiconductor and battery stocks."
+>
+  <h1>Posts</h1>
+  <ul class="post-list">
+    {posts.map((post) => (
+      <li>
+        <span class="asof">{post.data.date.toISOString().slice(0, 10)}</span>
+        {post.data.sector && <span class="code">[{post.data.sector}]</span>}
+        <a href={`/posts/${post.id.replace(/\.md$/, "")}/`}>{post.data.title}</a>
+        <p class="desc">{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+</Base>
+<style>
+  .post-list { list-style: none; padding: 0; }
+  .post-list li { margin-bottom: 1.2rem; }
+  .desc { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.9rem; }
+</style>

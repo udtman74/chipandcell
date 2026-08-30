@@ -1,0 +1,36 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base
+  title="Methodology | Chip & Cell"
+  description="Data sources, update schedule and conventions behind Chip & Cell's Korean semiconductor and battery stock pages."
+>
+  <h1>Methodology</h1>
+  <h2>Data sources</h2>
+  <ul>
+    <li><strong>Prices &amp; indices:</strong> KRX end-of-day market data (via FinanceDataReader).</li>
+    <li><strong>Investor flows:</strong> Korea Investment &amp; Securities open API (foreign / institutional / individual net trading). Shown only when available.</li>
+  </ul>
+  <h2>Update schedule</h2>
+  <p>
+    Data pages refresh automatically once per trading day after the Seoul close
+    (18:10 KST). The "as of" date on each page is the last completed session.
+  </p>
+  <h2>Definitions</h2>
+  <ul>
+    <li><strong>52-week position:</strong> where the close sits inside the 252-trading-day low–high range (0% = at the low, 100% = at the high).</li>
+    <li><strong>N-day return:</strong> close-to-close percentage change over the last N trading days.</li>
+    <li><strong>Median 20-day return:</strong> sector midpoint across our covered names — a rough gauge of sector momentum.</li>
+  </ul>
+  <h2>Conventions</h2>
+  <p>
+    Colors follow the Korean market convention: <span class="up">red = up</span>,
+    <span class="down">blue = down</span> — the opposite of Western charts.
+  </p>
+  <h2>Disclaimer</h2>
+  <p>
+    All content is for information only and is <strong>not investment advice</strong>.
+    Deep dives include model-assisted analysis; despite review, data and text may contain
+    errors. Verify against primary sources (KRX, DART filings, company IR) before acting.
+  </p>
+</Base>

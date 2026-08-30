@@ -1,0 +1,15 @@
+---
+import Base from "../layouts/Base.astro";
+import SectorTable from "../components/SectorTable.astro";
+---
+<Base
+  title="Korean Battery Stocks — Daily Data | Chip & Cell"
+  description="Daily updated table of 12 covered Korean battery stocks on KOSPI/KOSDAQ: LG Energy Solution, Samsung SDI, cathode and materials makers. Prices, returns, 52-week positions."
+>
+  <h1>Battery</h1>
+  <p>
+    The K-battery value chain: cell makers LG Energy Solution, Samsung SDI and SK Innovation,
+    plus the cathode and materials names that supply the global EV industry. We cover 12 names.
+  </p>
+  <SectorTable sector="battery" />
+</Base>

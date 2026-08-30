@@ -1,0 +1,87 @@
+---
+const { title, description } = Astro.props;
+const nav = [
+  ["/semiconductor/", "Semiconductor"],
+  ["/battery/", "Battery"],
+  ["/market/", "Market"],
+  ["/posts/", "Posts"],
+  ["/about/", "About"],
+];
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="alternate" type="application/rss+xml" title="Chip & Cell" href="/rss.xml" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔋</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/">Chip &amp; Cell</a>
+      <p class="tagline">Korean Semiconductor &amp; Battery Stocks — Data &amp; Deep Dives</p>
+      <nav>
+        {nav.map(([href, label]) => (
+          <a href={href} class={path.startsWith(href) ? "active" : ""}>{label}</a>
+        ))}
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <slot />
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Chip &amp; Cell is an automated data &amp; research site covering Korea's semiconductor and battery sectors.
+      <strong>Not investment advice.</strong> Data may contain errors. Sources: KRX market data.</p>
+      <p><a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/rss.xml">RSS</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+<style is:global>
+  :root {
+    --bg: #fafafa; --fg: #1a1a1a; --muted: #666; --line: #e2e2e2;
+    --card: #fff; --accent: #0b5fff; --up: #d32f2f; --down: #1565c0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417; --fg: #e8e8e8; --muted: #9aa0a6; --line: #2c3136;
+      --card: #1b1f24; --accent: #6ea8ff; --up: #ef5350; --down: #64b5f6;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .site-header { border-bottom: 1px solid var(--line); padding: 1rem 0 0; background: var(--card); }
+  .logo { font-size: 1.5rem; font-weight: 700; color: var(--fg); }
+  .tagline { margin: 0.1rem 0 0.6rem; color: var(--muted); font-size: 0.85rem; }
+  .site-header nav { display: flex; gap: 1.1rem; overflow-x: auto; padding-bottom: 0.6rem; }
+  .site-header nav a { color: var(--fg); font-weight: 500; white-space: nowrap; }
+  .site-header nav a.active { color: var(--accent); }
+  main { padding: 1.5rem 1rem 3rem; min-height: 60vh; }
+  .site-footer { border-top: 1px solid var(--line); color: var(--muted);
+    font-size: 0.8rem; padding: 1.2rem 0 2rem; }
+  table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+  th, td { padding: 0.4rem 0.6rem; text-align: right; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { border-bottom: 2px solid var(--fg); font-size: 0.85rem; }
+  .table-scroll { overflow-x: auto; }
+  .up { color: var(--up); } .down { color: var(--down); }
+  .asof { color: var(--muted); font-size: 0.85rem; }
+  .code { color: var(--muted); font-size: 0.9rem; font-weight: 400; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.2rem; }
+  .card h3 { margin-top: 0; }
+  .bar { position: relative; height: 8px; background: var(--line); border-radius: 4px; margin: 0.3rem 0; }
+  .bar span { position: absolute; top: -3px; width: 14px; height: 14px; border-radius: 50%;
+    background: var(--accent); transform: translateX(-50%); }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.25rem; margin-top: 2rem; }
+</style>
