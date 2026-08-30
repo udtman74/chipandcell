@@ -31,3 +31,12 @@ def fmt_pct(v):
 
 def fmt_won(v):
     return "—" if v is None else f"₩{round(v):,}"
+
+
+def market_line(market):
+    """프롬프트용 시장 컨텍스트 한 줄. 지수 피드가 스테일이면 수치 대신 명시적 불가 표기."""
+    mk, mq = market.get("kospi", {}), market.get("kosdaq", {})
+    if mk.get("stale") or mq.get("stale"):
+        return "Market index context unavailable today (index feed stale) — do not comment on the broader market."
+    return (f"Market: KOSPI {fmt_pct(mk.get('pct'))} today, "
+            f"KOSDAQ {fmt_pct(mq.get('pct'))}")

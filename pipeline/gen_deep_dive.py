@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 from pipeline.tickers import TICKERS
 from pipeline.llm import analyze
-from pipeline.post_common import frontmatter, md_table, fmt_pct, fmt_won, DISCLAIMER
+from pipeline.post_common import frontmatter, md_table, fmt_pct, fmt_won, DISCLAIMER, market_line
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(_DIR, "..", "site", "src", "data")
@@ -69,7 +69,7 @@ Today's data (as of {s['date']}, KST close):
 - MA20 {fmt_won(s['ma20'])}, MA60 {fmt_won(s['ma60'])}
 - {flow_txt}
 - Sector context: covered Korean {s['sector']} names median 20-day return {fmt_pct(sector_ctx['median_r20'])}
-- Market: KOSPI {fmt_pct(market['kospi']['pct'])} today, KOSDAQ {fmt_pct(market['kosdaq']['pct'])}
+- {market_line(market)}
 
 Rules:
 - Cite the specific numbers above; every claim must be tied to a number or a well-known, dated fact about the company.

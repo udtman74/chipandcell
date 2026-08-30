@@ -23,9 +23,10 @@ const rows = [
         {rows.map(([name, m]) => {
           const day = pct(m.pct);
           const r20 = pct(m.r20);
+          const stale = m.date && m.date !== market.asof;
           return (
             <tr>
-              <td>{name}</td>
+              <td>{name}{stale && <span class="asof"> (as of {m.date})</span>}</td>
               <td>{m.close.toLocaleString("en-US")}</td>
               <td><span class={day.cls}>{day.text}</span></td>
               <td><span class={r20.cls}>{r20.text}</span></td>

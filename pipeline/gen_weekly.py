@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 
 from pipeline.llm import analyze
-from pipeline.post_common import frontmatter, md_table, fmt_pct, DISCLAIMER
+from pipeline.post_common import frontmatter, md_table, fmt_pct, DISCLAIMER, market_line
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(_DIR, "..", "site", "src", "data")
@@ -31,7 +31,7 @@ Write a 500-650 word weekly wrap in English covering Korea's semiconductor and b
 This week's data (5-day returns, as of the Friday Seoul close):
 - {parts[0]}
 - {parts[1]}
-- Indices: KOSPI day {fmt_pct(market['kospi']['pct'])}, 20-day {fmt_pct(market['kospi']['r20'])}; KOSDAQ day {fmt_pct(market['kosdaq']['pct'])}, 20-day {fmt_pct(market['kosdaq']['r20'])}
+- {market_line(market)}
 
 Rules:
 - Cite the specific numbers above; no generic filler that could apply to any week.

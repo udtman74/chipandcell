@@ -54,16 +54,27 @@ def run():
             "bottom": rank[-3:],
         }
     market = {}
-    # KS11/KQ11(네이버 경로)은 미니에서 빈 DF를 반환하는 사례가 있어 야후(^) 폴백
+    # KS11/KQ11(네이버)은 미니에서 빈 DF, ^KS11(야후)은 최신 봉이 NaN(스테일)인 사례가 있어
+    # 두 소스 중 "가장 최신 날짜"를 채택하고 날짜를 기록한다. asof보다 오래되면 stale 표기.
     for key, syms in (("kospi", ("KS11", "^KS11")), ("kosdaq", ("KQ11", "^KQ11"))):
+        best = None
         for sym in syms:
-            df = fdr.DataReader(sym)
+            try:
+                df = fdr.DataReader(sym)
+            except Exception:
+                continue
             if len(df) and "Close" in df.columns:
                 m = compute(df)
-                market[key] = {"close": m["close"], "pct": m["pct"], "r20": m["r20"]}
-                break
-        else:
+                if best is None or m["date"] > best["date"]:
+                    best = m
+                if best["date"] >= asof:
+                    break
+        if best is None:
             raise SystemExit(f"export aborted: index fetch failed for {key} ({syms})")
+        market[key] = {"close": best["close"], "pct": best["pct"], "r20": best["r20"],
+                       "date": best["date"], "stale": best["date"] < asof}
+        if best["date"] < asof:
+            print(f"  ⚠️ {key} index stale: {best['date']} < stocks asof {asof}")
     os.makedirs(OUT, exist_ok=True)
     for name, payload in (("stocks", {"asof": asof, "stocks": stocks}),
                           ("sectors", {"asof": asof, "sectors": sectors}),

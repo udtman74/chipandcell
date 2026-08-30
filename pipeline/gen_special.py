@@ -50,7 +50,11 @@ def _write(out, body):
 def market_report(key):
     name, syms = INDICES[key]
     m = _fetch_index(syms)
-    _, sectors = _load()
+    stocks, sectors = _load()
+    asof = max(s["date"] for s in stocks.values())
+    if m["date"] < asof:
+        raise SystemExit(f"abort: {name} index data stale ({m['date']} < stocks asof {asof}) — "
+                         "다른 머신(네이버 소스 가용)에서 재실행 필요")
     today = datetime.now().strftime("%Y-%m-%d")
     out = os.path.join(POSTS, f"{today}-{key}-deep-dive.md")
     if os.path.exists(out):
