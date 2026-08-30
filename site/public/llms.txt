@@ -1,0 +1,22 @@
+# Chip & Cell
+
+> Focused daily data and deep dives on Korea's two flagship export sectors:
+> 27 semiconductor and battery stocks on KOSPI and KOSDAQ. English-language.
+> Data pages refresh every trading day after the Seoul close. Not investment advice.
+
+## Data pages (fixed URLs, refreshed daily)
+
+- https://chipandcell.com/semiconductor/ : table of 15 covered Korean semiconductor stocks
+- https://chipandcell.com/battery/ : table of 12 covered Korean battery stocks
+- https://chipandcell.com/market/ : KOSPI & KOSDAQ snapshot
+- https://chipandcell.com/stocks/005930/ : per-stock pages (Samsung Electronics shown; same pattern for all 27 covered codes)
+
+## Posts
+
+- https://chipandcell.com/posts/ : deep dives (daily) and weekly sector reviews
+- https://chipandcell.com/rss.xml : RSS feed
+
+## Reference
+
+- https://chipandcell.com/methodology/ : data sources, definitions, update schedule
+- https://chipandcell.com/about/ : what this site is and is not
