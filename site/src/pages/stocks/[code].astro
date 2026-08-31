@@ -31,6 +31,14 @@ const flowRows = s.flow
       ["Individuals", s.flow.individual_net],
     ].filter(([, v]) => v != null)
   : [];
+// 정적 import 경로에는 변수를 넣을 수 없으므로 glob(eager)로 읽는다.
+// 파일이 없으면 undefined → 해당 차트 영역을 렌더하지 않는다(스테일 가드와 동일 동작).
+const charts = import.meta.glob("../../data/charts/*.svg", {
+  query: "?raw", import: "default", eager: true,
+});
+const candle = charts[`../../data/charts/${code}-candle.svg`];
+const flowChart = charts[`../../data/charts/${code}-flow.svg`];
+
 const title = `${s.name_en} (${code}) Stock Data — Price, 52-Week Range, Returns`;
 ---
 <Base
@@ -54,6 +62,13 @@ const title = `${s.name_en} (${code}) Stock Data — Price, 52-Week Range, Retur
     </table>
   </div>
 
+  {candle && (
+    <>
+      <h2>Price history</h2>
+      <figure set:html={candle} />
+    </>
+  )}
+
   <h2>52-week range</h2>
   <p>
     {won(s.lo52)} — {won(s.hi52)}, currently at the <strong>{s.pos52}%</strong> mark of the range.
@@ -75,6 +90,14 @@ const title = `${s.name_en} (${code}) Stock Data — Price, 52-Week Range, Retur
           </tbody>
         </table>
       </div>
+    </>
+  )}
+
+  {flowChart && (
+    <>
+      <h2>Cumulative investor flows (30 sessions)</h2>
+      <figure set:html={flowChart} />
+      <p class="asof">Cumulative net buying in shares since the start of the window.</p>
     </>
   )}
 

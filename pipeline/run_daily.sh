@@ -20,6 +20,7 @@ mkdir -p logs
   "$PY" -m pipeline.flow_history || echo "FLOW_HISTORY FAILED (continuing)"
   "$PY" -m pipeline.record_ledger || echo "RECORD_LEDGER FAILED (continuing)"
   "$PY" -m pipeline.verify_ledger || echo "VERIFY_LEDGER FAILED (continuing)"
+  "$PY" -m pipeline.charts || echo "CHARTS FAILED (continuing)"
   "$PY" -m pipeline.gen_deep_dive
   "$PY" -m pipeline.gen_weekly
   git add site/src/data site/src/content/posts

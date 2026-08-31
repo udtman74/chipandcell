@@ -48,11 +48,13 @@ const path = Astro.url.pathname;
   :root {
     --bg: #fafafa; --fg: #1a1a1a; --muted: #666; --line: #e2e2e2;
     --card: #fff; --accent: #0b5fff; --up: #d32f2f; --down: #1565c0;
+    --series-a: #0b5fff; --series-b: #8a6d3b;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #121417; --fg: #e8e8e8; --muted: #9aa0a6; --line: #2c3136;
       --card: #1b1f24; --accent: #6ea8ff; --up: #ef5350; --down: #64b5f6;
+      --series-a: #6ea8ff; --series-b: #d9b56b;
     }
   }
   * { box-sizing: border-box; }
@@ -85,4 +87,5 @@ const path = Astro.url.pathname;
   .bar span { position: absolute; top: -3px; width: 14px; height: 14px; border-radius: 50%;
     background: var(--accent); transform: translateX(-50%); }
   h1 { font-size: 1.6rem; } h2 { font-size: 1.25rem; margin-top: 2rem; }
+  figure { margin: 0.8rem 0; }
 </style>
