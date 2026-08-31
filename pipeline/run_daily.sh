@@ -16,6 +16,10 @@ mkdir -p logs
   PY=.venv/bin/python
   [ -x "$PY" ] || PY=python3
   "$PY" -m pipeline.export_data || { echo "EXPORT FAILED"; exit 1; }
+  # 이하 신규 단계는 실패해도 후속을 막지 않는다(데이터 갱신·발행이 우선).
+  "$PY" -m pipeline.flow_history || echo "FLOW_HISTORY FAILED (continuing)"
+  "$PY" -m pipeline.record_ledger || echo "RECORD_LEDGER FAILED (continuing)"
+  "$PY" -m pipeline.verify_ledger || echo "VERIFY_LEDGER FAILED (continuing)"
   "$PY" -m pipeline.gen_deep_dive
   "$PY" -m pipeline.gen_weekly
   git add site/src/data site/src/content/posts

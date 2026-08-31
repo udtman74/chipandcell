@@ -126,6 +126,26 @@ def run(ticker=None):
         _save_state(state)
     print(f"deep dive OK {code} {s['name_en']} -> {os.path.basename(out)}")
 
+    # 관찰 노트를 장부에 기록(소급 불가 자산 — UI보다 먼저 축적한다).
+    # 실패해도 글 발행에는 영향을 주지 않는다.
+    try:
+        from pipeline.record_ledger import load as load_ledger, save as save_ledger, attach_note
+        note = analyze(
+            "From the analyst note below, extract the 2-3 sentence factual observation that "
+            "would matter when reviewing this stock 20 trading days from now. "
+            "State only what was observed (levels, flows, position in range) — no prediction, "
+            "no recommendation, no price target. Plain text, no markdown.\n\n" + analysis)
+        if note:
+            led = load_ledger()
+            slug = os.path.basename(out)[:-3]
+            if attach_note(led, code, s["date"], note.strip(), slug):
+                save_ledger(led, today)
+                print(f"  📝 ledger note attached: {code} {s['date']}")
+            else:
+                print(f"  ⚠️ ledger note: no record for {code} {s['date']}")
+    except Exception as e:
+        print(f"  ⚠️ ledger note skipped: {e!r}")
+
 
 if __name__ == "__main__":
     import argparse
