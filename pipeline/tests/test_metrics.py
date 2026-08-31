@@ -19,3 +19,16 @@ def test_compute_basic():
 def test_compute_flat_series_pos52_degenerate():
     m = compute(_df([100.0] * 300))
     assert m["pos52"] == 50.0 and m["pct"] == 0.0
+
+
+def test_compute_asof_slices_series():
+    df = _df(list(range(100, 400)))          # 2025-01-01부터 300 영업일, 단조 상승
+    asof = df.index[199].strftime("%Y-%m-%d")
+    m = compute(df, asof=asof)
+    assert m["close"] == 299                  # 200번째 봉 종가
+    assert m["date"] == asof
+
+
+def test_compute_asof_none_uses_full_series():
+    df = _df(list(range(100, 400)))
+    assert compute(df)["close"] == 399

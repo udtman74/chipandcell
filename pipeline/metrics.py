@@ -1,8 +1,17 @@
 """OHLCV DataFrame(fdr 형식) → 지표 dict. 52주=252거래일 근사."""
+import pandas as pd
 
 
-def compute(df):
-    df = df.dropna(subset=["Close"]).tail(300)
+def compute(df, asof=None):
+    """asof("YYYY-MM-DD") 지정 시 그 일자까지만 사용해 과거 시점 지표를 재현한다.
+
+    과거 레코드에 오늘 기준 값을 넣으면 미래 정보 누출이자 사실 오류이므로,
+    백필 스냅샷은 반드시 asof를 지정해 계산한다.
+    """
+    df = df.dropna(subset=["Close"])
+    if asof is not None:
+        df = df[df.index <= pd.Timestamp(asof)]
+    df = df.tail(300)
     c = df["Close"]
     close = float(c.iloc[-1])
     prev = float(c.iloc[-2])
