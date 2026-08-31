@@ -86,7 +86,7 @@
    "flow": {
     "foreign_net": -67747,
     "inst_net": -14548,
-    "individual_net": 94771
+    "individual_net": 95271
    }
   },
   "039030": {
@@ -151,8 +151,8 @@
    "sector": "semiconductor",
    "flow": {
     "foreign_net": 106694,
-    "inst_net": -121873,
-    "individual_net": 15960
+    "inst_net": -121268,
+    "individual_net": 15355
    }
   },
   "036930": {
@@ -414,8 +414,8 @@
    "name_kr": "에코프로비엠",
    "sector": "battery",
    "flow": {
-    "foreign_net": 17447,
-    "inst_net": -51829,
+    "foreign_net": 11204,
+    "inst_net": -45586,
     "individual_net": 35016
    }
   },
