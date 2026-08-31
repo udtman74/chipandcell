@@ -1,0 +1,72 @@
+---
+import ledger from "../data/history/ledger.json";
+import { won, pct } from "../lib/fmt.js";
+
+const { code } = Astro.props;
+const mine = ledger.records.filter((r) => r.code === code);
+const rows = [...mine].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 12);
+const verifiedCount = mine.filter((r) => r.verified).length;
+---
+{rows.length > 0 && (
+  <>
+    <h2>Track record</h2>
+    <p class="asof">
+      What the data showed on each date, and where the stock actually stood 20 trading
+      sessions later. Outcomes are published as recorded — favourable or not.
+      {verifiedCount > 0 && <> {verifiedCount} observations have completed their window.</>}
+    </p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th><th>Close</th><th>52w pos</th><th>Foreign 5d</th>
+            <th>After 20 sessions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => {
+            const v = r.verified;
+            const vp = v ? pct(v.return_pct) : null;
+            return (
+              <tr>
+                <td>
+                  {r.date}
+                  {r.backfilled && (
+                    <span class="code" title="Computed retrospectively"> ·retro</span>
+                  )}
+                </td>
+                <td>{won(r.close)}</td>
+                <td>{r.pos52}%</td>
+                <td>{r.flow5_f == null ? "—" : r.flow5_f.toLocaleString("en-US")}</td>
+                <td>
+                  {vp
+                    ? <span class={vp.cls}>{vp.text}</span>
+                    : <span class="code">pending</span>}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    {rows.some((r) => r.note) && (
+      <ul class="notes">
+        {rows.filter((r) => r.note).map((r) => (
+          <li>
+            <span class="asof">{r.date}</span> {r.note}
+            {r.note_post && <> (<a href={`/posts/${r.note_post}/`}>full note</a>)</>}
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="asof">
+      Rows marked <strong>·retro</strong> were computed retrospectively from historical data
+      when this section was introduced — they are accurate facts about those dates, but they
+      were not published at the time. See <a href="/methodology/">methodology</a>.
+    </p>
+  </>
+)}
+<style>
+  .notes { font-size: 0.9rem; padding-left: 1.1rem; }
+  .notes li { margin-bottom: 0.4rem; }
+</style>

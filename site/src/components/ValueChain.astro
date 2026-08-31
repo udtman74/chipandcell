@@ -1,0 +1,111 @@
+---
+import stocksData from "../data/stocks.json";
+import vc from "../data/valuechain.json";
+import { pct } from "../lib/fmt.js";
+
+const { sector } = Astro.props;
+const stages = vc.stages[sector] ?? [];
+const notes = vc.notes ?? {};
+const links = (vc.links ?? []).filter(
+  (l) => stocksData.stocks[l.from]?.sector === sector
+);
+const disclosed = links.filter((l) => l.tier === "disclosure");
+const reported = links.filter((l) => l.tier === "reported");
+const name = (code) => stocksData.stocks[code]?.name_en ?? code;
+---
+<div class="vc">
+  {stages.map((stage) => (
+    <div class="vc-stage">
+      <h3>{stage.label}</h3>
+      <div class="vc-nodes">
+        {stage.codes.map((code) => {
+          const s = stocksData.stocks[code];
+          if (!s) return null;
+          const d = pct(s.pct);
+          const r = pct(s.r20);
+          return (
+            <a class="vc-node" href={`/stocks/${code}/`}>
+              <span class="vc-name">
+                {s.name_en}
+                {notes[code] && <sup class="vc-mark" title={notes[code]}>†</sup>}
+              </span>
+              <span class="vc-nums">
+                <span class={d.cls}>{d.text}</span>
+                <span class="code"> 20d </span>
+                <span class={r.cls}>{r.text}</span>
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  ))}
+</div>
+
+{Object.keys(notes).some((c) => stocksData.stocks[c]?.sector === sector) && (
+  <ul class="vc-notes">
+    {Object.entries(notes)
+      .filter(([c]) => stocksData.stocks[c]?.sector === sector)
+      .map(([c, text]) => (
+        <li><strong>{name(c)}</strong> — {text}</li>
+      ))}
+  </ul>
+)}
+
+{links.length > 0 && (
+  <details class="vc-links">
+    <summary>Documented supply relationships within our coverage ({links.length})</summary>
+    <p class="asof">
+      Only relationships we could trace to a citable source are listed. Contract values are
+      as contracted, not as delivered.
+    </p>
+    {disclosed.length > 0 && (
+      <>
+        <h4>From disclosures and company announcements</h4>
+        <ul>
+          {disclosed.map((l) => (
+            <li>
+              <strong>{name(l.from)} → {name(l.to)}</strong>: {l.label}{" "}
+              (<a href={l.source} rel="nofollow noopener" target="_blank">source, {l.year}</a>)
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+    {reported.length > 0 && (
+      <>
+        <h4>Reported by the trade press, not contract disclosures</h4>
+        <ul>
+          {reported.map((l) => (
+            <li>
+              <strong>{name(l.from)} → {name(l.to)}</strong>: {l.label}{" "}
+              (<a href={l.source} rel="nofollow noopener" target="_blank">source, {l.year}</a>)
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+  </details>
+)}
+
+<style>
+  .vc { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+  .vc-stage { border: 1px solid var(--line); border-radius: 8px; padding: 0.6rem 0.8rem;
+    background: var(--card); }
+  .vc-stage h3 { margin: 0 0 0.5rem; font-size: 0.8rem; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--muted); }
+  .vc-nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 0.4rem; }
+  .vc-node { display: flex; justify-content: space-between; gap: 0.5rem; align-items: baseline;
+    border: 1px solid var(--line); border-radius: 6px; padding: 0.35rem 0.5rem;
+    font-size: 0.85rem; color: var(--fg); }
+  .vc-node:hover { border-color: var(--accent); text-decoration: none; }
+  .vc-mark { color: var(--muted); cursor: help; }
+  .vc-nums { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .vc-notes { font-size: 0.8rem; color: var(--muted); padding-left: 1.1rem; margin: 0.4rem 0 0; }
+  .vc-notes li { margin-bottom: 0.25rem; }
+  .vc-links { margin: 0.8rem 0 1.2rem; font-size: 0.9rem; }
+  .vc-links h4 { margin: 0.8rem 0 0.3rem; font-size: 0.9rem; }
+  .vc-links ul { padding-left: 1.1rem; }
+  .vc-links li { margin-bottom: 0.4rem; }
+</style>

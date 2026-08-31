@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import TrackRecord from "../../components/TrackRecord.astro";
 import data from "../../data/stocks.json";
 import { won, pct, bil } from "../../lib/fmt.js";
 
@@ -106,6 +107,8 @@ const title = `${s.name_en} (${code}) Stock Data — Price, 52-Week Range, Retur
     Ranked <strong>#{rank}</strong> of {peers.length} covered Korean {s.sector} names by 20-day return.
     See the full <a href={sectorPath}>{s.sector} sector table</a>.
   </p>
+
+  <TrackRecord code={code} />
 
   <p class="asof">
     Colors follow Korean market convention: red = up, blue = down.

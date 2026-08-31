@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import SectorTable from "../components/SectorTable.astro";
+import ValueChain from "../components/ValueChain.astro";
 ---
 <Base
   title="Korean Semiconductor Stocks — Daily Data | Chip & Cell"
@@ -11,5 +12,9 @@ import SectorTable from "../components/SectorTable.astro";
     Korea's flagship export sector: memory giants Samsung Electronics and SK Hynix plus the
     KOSDAQ equipment, materials and test ecosystem around them. We cover 15 names.
   </p>
+  <h2>Value chain</h2>
+  <ValueChain sector="semiconductor" />
+
+  <h2>Coverage</h2>
   <SectorTable sector="semiconductor" />
 </Base>

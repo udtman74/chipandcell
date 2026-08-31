@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import SectorTable from "../components/SectorTable.astro";
+import ValueChain from "../components/ValueChain.astro";
 ---
 <Base
   title="Korean Battery Stocks — Daily Data | Chip & Cell"
@@ -11,5 +12,9 @@ import SectorTable from "../components/SectorTable.astro";
     The K-battery value chain: cell makers LG Energy Solution, Samsung SDI and SK Innovation,
     plus the cathode and materials names that supply the global EV industry. We cover 12 names.
   </p>
+  <h2>Value chain</h2>
+  <ValueChain sector="battery" />
+
+  <h2>Coverage</h2>
   <SectorTable sector="battery" />
 </Base>
