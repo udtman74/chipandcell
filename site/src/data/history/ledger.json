@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05",
+ "updated": "2026-09-06",
  "records": [
   {
    "code": "000660",
@@ -15402,8 +15402,8 @@
    "flow5_f": 448351,
    "flow5_i": -200887,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On September 4, 2026, Jusung Engineering closed at ₩178,300 (+6.13%), bringing its 20-day return to +33.66% and crossing above both its 20-day moving average (₩170,350) and 60-day moving average (₩175,318). The close positioned the equity at 67.8% of its 52-week range of ₩26,300 to ₩250,500, with the 20-day moving average still tracking below the 60-day moving average. Detailed institutional and foreign investor flow data for the session was unavailable.",
+   "note_post": "2026-09-06-jusung-engineering",
    "verified": null
   },
   {
