@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-11",
+ "updated": "2026-09-12",
  "records": [
   {
    "code": "000660",
@@ -18267,8 +18267,8 @@
    "flow5_f": -1315371,
    "flow5_i": 1019732,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On September 11, 2026, Wonik IPS closed at ₩110,300, placing it at 49.7% of its 52-week range of ₩38,150 to ₩183,300 and beneath both its 20-day moving average of ₩112,275 and 60-day moving average of ₩118,860. Over the trailing 20 sessions, the stock fell 8.08% against a peer median gain of 2.21%, extending its 60-session drawdown to 31.79%. Exchange-level foreign and domestic institutional flow data for the session was unavailable.",
+   "note_post": "2026-09-12-wonik-ips",
    "verified": null
   },
   {

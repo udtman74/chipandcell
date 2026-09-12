@@ -17,11 +17,7 @@
    "name_en": "Samsung Electronics",
    "name_kr": "삼성전자",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -3531147,
-    "inst_net": -2208594,
-    "individual_net": 3643746
-   }
+   "flow": null
   },
   "000660": {
    "close": 1812000.0,
@@ -39,11 +35,7 @@
    "name_en": "SK Hynix",
    "name_kr": "SK하이닉스",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -606502,
-    "inst_net": -274533,
-    "individual_net": 277145
-   }
+   "flow": null
   },
   "042700": {
    "close": 231000.0,
@@ -61,11 +53,7 @@
    "name_en": "Hanmi Semiconductor",
    "name_kr": "한미반도체",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -436867,
-    "inst_net": -185647,
-    "individual_net": 619228
-   }
+   "flow": null
   },
   "403870": {
    "close": 53300.0,
@@ -83,11 +71,7 @@
    "name_en": "HPSP",
    "name_kr": "HPSP",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -178098,
-    "inst_net": 41181,
-    "individual_net": 130832
-   }
+   "flow": null
   },
   "039030": {
    "close": 445500.0,
@@ -105,11 +89,7 @@
    "name_en": "EO Technics",
    "name_kr": "이오테크닉스",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -2079,
-    "inst_net": -2194,
-    "individual_net": 3871
-   }
+   "flow": null
   },
   "058470": {
    "close": 66400.0,
@@ -127,11 +107,7 @@
    "name_en": "Leeno Industrial",
    "name_kr": "리노공업",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -177395,
-    "inst_net": 58845,
-    "individual_net": 114610
-   }
+   "flow": null
   },
   "240810": {
    "close": 110300.0,
@@ -149,11 +125,7 @@
    "name_en": "Wonik IPS",
    "name_kr": "원익IPS",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -242503,
-    "inst_net": -119176,
-    "individual_net": 357311
-   }
+   "flow": null
   },
   "036930": {
    "close": 209000.0,
@@ -171,11 +143,7 @@
    "name_en": "Jusung Engineering",
    "name_kr": "주성엔지니어링",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -70032,
-    "inst_net": -190144,
-    "individual_net": 260599
-   }
+   "flow": null
   },
   "000990": {
    "close": 105800.0,
@@ -193,11 +161,7 @@
    "name_en": "DB HiTek",
    "name_kr": "DB하이텍",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -378912,
-    "inst_net": 28390,
-    "individual_net": 349351
-   }
+   "flow": null
   },
   "357780": {
    "close": 330000.0,
@@ -215,11 +179,7 @@
    "name_en": "Soulbrain",
    "name_kr": "솔브레인",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": 3177,
-    "inst_net": -6040,
-    "individual_net": 3050
-   }
+   "flow": null
   },
   "005290": {
    "close": 40800.0,
@@ -237,11 +197,7 @@
    "name_en": "Dongjin Semichem",
    "name_kr": "동진쎄미켐",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -86361,
-    "inst_net": -33326,
-    "individual_net": 119123
-   }
+   "flow": null
   },
   "064760": {
    "close": 258000.0,
@@ -259,11 +215,7 @@
    "name_en": "TCK",
    "name_kr": "티씨케이",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -6481,
-    "inst_net": 5360,
-    "individual_net": 1044
-   }
+   "flow": null
   },
   "067310": {
    "close": 34400.0,
@@ -281,11 +233,7 @@
    "name_en": "Hana Micron",
    "name_kr": "하나마이크론",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -284543,
-    "inst_net": 19092,
-    "individual_net": 266566
-   }
+   "flow": null
   },
   "095340": {
    "close": 190200.0,
@@ -303,11 +251,7 @@
    "name_en": "ISC",
    "name_kr": "ISC",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -23748,
-    "inst_net": 31312,
-    "individual_net": -7696
-   }
+   "flow": null
   },
   "399720": {
    "close": 40950.0,
@@ -325,11 +269,7 @@
    "name_en": "Gaonchips",
    "name_kr": "가온칩스",
    "sector": "semiconductor",
-   "flow": {
-    "foreign_net": -77884,
-    "inst_net": -17001,
-    "individual_net": 95020
-   }
+   "flow": null
   },
   "373220": {
    "close": 360000.0,
@@ -347,11 +287,7 @@
    "name_en": "LG Energy Solution",
    "name_kr": "LG에너지솔루션",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -15513,
-    "inst_net": 14944,
-    "individual_net": 15034
-   }
+   "flow": null
   },
   "006400": {
    "close": 545000.0,
@@ -369,11 +305,7 @@
    "name_en": "Samsung SDI",
    "name_kr": "삼성SDI",
    "sector": "battery",
-   "flow": {
-    "foreign_net": 16500,
-    "inst_net": -73081,
-    "individual_net": 59149
-   }
+   "flow": null
   },
   "096770": {
    "close": 144800.0,
@@ -391,11 +323,7 @@
    "name_en": "SK Innovation",
    "name_kr": "SK이노베이션",
    "sector": "battery",
-   "flow": {
-    "foreign_net": 45108,
-    "inst_net": -101748,
-    "individual_net": 53465
-   }
+   "flow": null
   },
   "247540": {
    "close": 110300.0,
@@ -413,11 +341,7 @@
    "name_en": "EcoPro BM",
    "name_kr": "에코프로비엠",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -43862,
-    "inst_net": -292973,
-    "individual_net": 335873
-   }
+   "flow": null
   },
   "086520": {
    "close": 84400.0,
@@ -435,11 +359,7 @@
    "name_en": "EcoPro",
    "name_kr": "에코프로",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -98999,
-    "inst_net": 4317,
-    "individual_net": 92191
-   }
+   "flow": null
   },
   "003670": {
    "close": 185300.0,
@@ -457,11 +377,7 @@
    "name_en": "POSCO Future M",
    "name_kr": "포스코퓨처엠",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -6007,
-    "inst_net": -33819,
-    "individual_net": 40349
-   }
+   "flow": null
   },
   "066970": {
    "close": 120000.0,
@@ -479,11 +395,7 @@
    "name_en": "L&F",
    "name_kr": "엘앤에프",
    "sector": "battery",
-   "flow": {
-    "foreign_net": 107441,
-    "inst_net": -199994,
-    "individual_net": 91900
-   }
+   "flow": null
   },
   "005070": {
    "close": 40200.0,
@@ -501,11 +413,7 @@
    "name_en": "Cosmo AM&T",
    "name_kr": "코스모신소재",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -9055,
-    "inst_net": 3027,
-    "individual_net": 5778
-   }
+   "flow": null
   },
   "011790": {
    "close": 89600.0,
@@ -523,11 +431,7 @@
    "name_en": "SKC",
    "name_kr": "SKC",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -37698,
-    "inst_net": 10992,
-    "individual_net": 31082
-   }
+   "flow": null
   },
   "020150": {
    "close": 42200.0,
@@ -545,11 +449,7 @@
    "name_en": "Lotte Energy Materials",
    "name_kr": "롯데에너지머티리얼즈",
    "sector": "battery",
-   "flow": {
-    "foreign_net": 40417,
-    "inst_net": -21410,
-    "individual_net": -17359
-   }
+   "flow": null
   },
   "121600": {
    "close": 47250.0,
@@ -567,11 +467,7 @@
    "name_en": "Nano Materials",
    "name_kr": "나노신소재",
    "sector": "battery",
-   "flow": {
-    "foreign_net": 64053,
-    "inst_net": -106005,
-    "individual_net": 41954
-   }
+   "flow": null
   },
   "278280": {
    "close": 38150.0,
@@ -589,11 +485,7 @@
    "name_en": "Chunbo",
    "name_kr": "천보",
    "sector": "battery",
-   "flow": {
-    "foreign_net": -409,
-    "inst_net": -7767,
-    "individual_net": 7884
-   }
+   "flow": null
   }
  }
 }
