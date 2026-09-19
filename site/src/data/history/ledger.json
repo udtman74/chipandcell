@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-18",
+ "updated": "2026-09-19",
  "records": [
   {
    "code": "000660",
@@ -20667,8 +20667,8 @@
    "flow5_f": -2050593,
    "flow5_i": -48874,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On September 18, 2026, SK Hynix closed at ₩1,849,000 (+4.70%), reclaiming both its 20-day moving average of ₩1,725,350 and 60-day moving average of ₩1,833,817 following a 60-day drawdown of -28.33%. The stock sits at the 59.5% percentile of its 52-week range (₩277,000 to ₩2,919,000) and remains 36.7% below its peak, with its 20-day return of +6.88% trailing the peer group median of +10.14%. Institutional and foreign trading flow data was unavailable for the session to verify positioning backing behind the move.",
+   "note_post": "2026-09-19-sk-hynix",
    "verified": null
   },
   {
