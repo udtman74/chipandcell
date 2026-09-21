@@ -8,6 +8,9 @@ const nav = [
   ["/about/", "About"],
 ];
 const path = Astro.url.pathname;
+
+// 애드센스 게시자 ID. 값이 없으면 스니펫을 넣지 않는다.
+const adsenseClient = import.meta.env.PUBLIC_ADSENSE_CLIENT;
 ---
 <!doctype html>
 <html lang="en">
@@ -20,6 +23,13 @@ const path = Astro.url.pathname;
   <meta name="google-site-verification" content="zWo7ArUGJmxK1e6T3J-QDEeVnKKLy_F6RLya7QwTJYg" />
   <link rel="alternate" type="application/rss+xml" title="Chip & Cell" href="/rss.xml" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔋</text></svg>" />
+  {adsenseClient && (
+    <script
+      async
+      src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+      crossorigin="anonymous"
+    />
+  )}
 </head>
 <body>
   <header class="site-header">
@@ -40,7 +50,7 @@ const path = Astro.url.pathname;
     <div class="wrap">
       <p>Chip &amp; Cell is an automated data &amp; research site covering Korea's semiconductor and battery sectors.
       <strong>Not investment advice.</strong> Data may contain errors. Sources: KRX market data.</p>
-      <p><a href="/methodology/">Methodology</a> · <a href="/about/">About</a> · <a href="/rss.xml">RSS</a></p>
+      <p class="footer-nav"><a href="/about/">About</a> · <a href="/methodology/">Methodology</a> · <a href="/disclaimer/">Disclaimer</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/contact/">Contact</a> · <a href="/rss.xml">RSS</a></p>
     </div>
   </footer>
 </body>
@@ -71,6 +81,7 @@ const path = Astro.url.pathname;
   .site-header nav a { color: var(--fg); font-weight: 500; white-space: nowrap; }
   .site-header nav a.active { color: var(--accent); }
   main { padding: 1.5rem 1rem 3rem; min-height: 60vh; }
+  .footer-nav { display: flex; flex-wrap: wrap; gap: 0.15rem 0.5rem; }
   .site-footer { border-top: 1px solid var(--line); color: var(--muted);
     font-size: 0.8rem; padding: 1.2rem 0 2rem; }
   table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }

@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base
+  title="Disclaimer | Chip & Cell"
+  description="Chip & Cell is a data and research site, not an advisory service. What that means in practice, and what our numbers can and cannot tell you."
+>
+  <h1>Disclaimer</h1>
+  <p class="muted">Last updated: September 21, 2026</p>
+
+  <h2>No investment advice</h2>
+  <p>
+    Chip &amp; Cell publishes data and written analysis about 27 listed Korean semiconductor
+    and battery companies. None of it is personalised investment advice. We do not know your
+    finances, your tax position, your time horizon or your risk tolerance, and nothing here
+    is tailored to them. We are not a licensed investment adviser, broker-dealer or
+    financial planner.
+  </p>
+
+  <h2>Where the numbers come from, and how they fail</h2>
+  <p>
+    Stock pages are refreshed by an automated pipeline after each Seoul session close, using
+    KRX market data and public company filings. Automated pipelines fail in specific ways:
+    a feed goes stale and yesterday's close is shown as today's; a ticker is reorganised
+    after a split or merger and history breaks; a filing is restated after we have already
+    published from the first version. We correct what we catch, but we cannot promise the
+    figure in front of you is right. Always check a primary source before acting.
+  </p>
+
+  <h2>Model-assisted writing</h2>
+  <p>
+    Deep dives and weekly reviews are drafted with model assistance on top of the collected
+    data, then reviewed before publishing. Review catches most errors, not all of them.
+    Treat our interpretation as one reading of the data, not as fact. The
+    <a href="/methodology/">methodology page</a> sets out what is computed and what is
+    inferred.
+  </p>
+
+  <h2>Forward-looking statements</h2>
+  <p>
+    Anything about future demand, capacity, pricing or margins is opinion about an unknown
+    future, not a forecast you should rely on. Semiconductor and battery cycles in
+    particular turn faster than most coverage of them.
+  </p>
+
+  <h2>No compensation from covered companies</h2>
+  <p>
+    We accept no payment, equity, product or other consideration from any company we cover,
+    and we do not run sponsored posts or paid links inside our coverage. The site carries
+    third-party display advertising, which is sold and placed by Google — those advertisers
+    have no say in what we write and no advance sight of it. See our
+    <a href="/privacy/">privacy policy</a> for how that advertising uses cookies.
+  </p>
+
+  <h2>Limitation of liability</h2>
+  <p>
+    The site is provided "as is". To the fullest extent permitted by law, we accept no
+    liability for any loss arising from the use of, or reliance on, anything published here.
+  </p>
+</Base>
+
+<style>
+  .muted { color: var(--muted); font-size: 0.9rem; }
+</style>

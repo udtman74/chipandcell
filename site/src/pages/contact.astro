@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base
+  title="Contact | Chip & Cell"
+  description="How to reach Chip & Cell — corrections to data, questions about methodology, and everything else."
+>
+  <h1>Contact</h1>
+
+  <p>
+    Chip &amp; Cell is written and maintained by one person in Seoul, so replies are not
+    instant — but every message is read.
+  </p>
+
+  <h2>Email</h2>
+  <p class="email"><a href="mailto:hello@chipandcell.com">hello@chipandcell.com</a></p>
+
+  <h2>Reporting a data error</h2>
+  <p>
+    Corrections are the most useful mail we get. The pipeline pulls from KRX market data and
+    public filings, and it does get things wrong. If a number looks off, send us:
+  </p>
+  <ul>
+    <li>the page URL,</li>
+    <li>the figure you think is wrong and what it should be, and</li>
+    <li>where you checked it (exchange page, filing, data vendor).</li>
+  </ul>
+  <p>
+    We fix confirmed errors on the next pipeline run and note material corrections on the
+    <a href="/methodology/">methodology page</a>.
+  </p>
+
+  <h2>What we do not do</h2>
+  <p>
+    We do not give personal investment advice, do not answer "should I buy X", and do not
+    accept paid placements, sponsored posts or paid links in our coverage. See the
+    <a href="/disclaimer/">disclaimer</a>.
+  </p>
+</Base>
+
+<style>
+  .email { font-size: 1.1rem; font-weight: 600; }
+  ul { line-height: 1.8; }
+</style>
