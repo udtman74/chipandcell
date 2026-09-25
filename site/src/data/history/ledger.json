@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24",
+ "updated": "2026-09-25",
  "records": [
   {
    "code": "000660",
@@ -22347,8 +22347,8 @@
    "flow5_f": 150280,
    "flow5_i": 117246,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On September 23, 2026, Dongjin Semichem closed at ₩46,850, clearing both its 20-day moving average of ₩41,610 and 60-day moving average of ₩42,780. This placed the stock at the 44.3% mark of its 52-week range (₩31,600 to ₩66,000), bringing its 20-day return to +10.63% and 60-day return to -16.49%. The advance was accompanied by net institutional buying of 66,900 shares and net foreign purchases of 101,869 shares.",
+   "note_post": "2026-09-25-dongjin-semichem",
    "verified": null
   },
   {
