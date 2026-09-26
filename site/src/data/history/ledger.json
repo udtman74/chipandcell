@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25",
+ "updated": "2026-09-26",
  "records": [
   {
    "code": "000660",
@@ -22557,8 +22557,8 @@
    "flow5_f": 359188,
    "flow5_i": 55210,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On September 23, 2026, SK Innovation closed at ₩148,700, placing the stock at 92.5% of its 52-week trading range and 3.2% below its 52-week high of ₩153,500. The shares stood 8.67% above their 20-day moving average of ₩136,830 and 22.05% above their 60-day moving average of ₩121,837 after a 20-session gain of 33.72%. Institutional flow breakdown between foreign and domestic participants was unavailable at the close.",
+   "note_post": "2026-09-26-sk-innovation",
    "verified": null
   },
   {
