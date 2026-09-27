@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "records": [
   {
    "code": "000660",
@@ -22677,8 +22677,8 @@
    "flow5_f": 172030,
    "flow5_i": 96726,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "HPSP closed at ₩55,600, placing the stock at the 50.1% percentile of its 52-week range of ₩27,600 to ₩83,500 following a 20-day gain of 14.64%. The spot price stood 5.30% above its 20-day moving average of ₩52,800 and 24.33% above its 60-day moving average of ₩44,718. Institutional and broker flow data were unavailable at the time of the close.",
+   "note_post": "2026-09-27-hpsp",
    "verified": null
   }
  ]
