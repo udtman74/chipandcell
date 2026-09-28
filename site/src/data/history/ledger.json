@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-27",
+ "updated": "2026-09-28",
  "records": [
   {
    "code": "000660",
@@ -14594,7 +14594,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 1762000.0,
+    "trading_days": 20,
+    "return_pct": 1.85
+   }
   },
   {
    "code": "000990",
@@ -14609,7 +14614,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 126100.0,
+    "trading_days": 20,
+    "return_pct": 32.18
+   }
   },
   {
    "code": "003670",
@@ -14624,7 +14634,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 183300.0,
+    "trading_days": 20,
+    "return_pct": -0.38
+   }
   },
   {
    "code": "005070",
@@ -14639,7 +14654,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 44300.0,
+    "trading_days": 20,
+    "return_pct": 8.71
+   }
   },
   {
    "code": "005290",
@@ -14654,7 +14674,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 45100.0,
+    "trading_days": 20,
+    "return_pct": 5.13
+   }
   },
   {
    "code": "005930",
@@ -14669,7 +14694,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 270000.0,
+    "trading_days": 20,
+    "return_pct": 1.5
+   }
   },
   {
    "code": "006400",
@@ -14684,7 +14714,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 529000.0,
+    "trading_days": 20,
+    "return_pct": -7.03
+   }
   },
   {
    "code": "011790",
@@ -14699,7 +14734,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 90400.0,
+    "trading_days": 20,
+    "return_pct": 0.33
+   }
   },
   {
    "code": "020150",
@@ -14714,7 +14754,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 42500.0,
+    "trading_days": 20,
+    "return_pct": 20.74
+   }
   },
   {
    "code": "036930",
@@ -14729,7 +14774,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 209500.0,
+    "trading_days": 20,
+    "return_pct": 16.97
+   }
   },
   {
    "code": "039030",
@@ -14744,7 +14794,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 468500.0,
+    "trading_days": 20,
+    "return_pct": 15.25
+   }
   },
   {
    "code": "042700",
@@ -14759,7 +14814,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 234000.0,
+    "trading_days": 20,
+    "return_pct": 5.41
+   }
   },
   {
    "code": "058470",
@@ -14774,7 +14834,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 71100.0,
+    "trading_days": 20,
+    "return_pct": 6.6
+   }
   },
   {
    "code": "064760",
@@ -14789,7 +14854,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 280000.0,
+    "trading_days": 20,
+    "return_pct": 15.46
+   }
   },
   {
    "code": "066970",
@@ -14804,7 +14874,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 114100.0,
+    "trading_days": 20,
+    "return_pct": -12.1
+   }
   },
   {
    "code": "067310",
@@ -14819,7 +14894,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 45450.0,
+    "trading_days": 20,
+    "return_pct": 17.29
+   }
   },
   {
    "code": "086520",
@@ -14834,7 +14914,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 81300.0,
+    "trading_days": 20,
+    "return_pct": -11.63
+   }
   },
   {
    "code": "095340",
@@ -14849,7 +14934,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 205000.0,
+    "trading_days": 20,
+    "return_pct": 19.74
+   }
   },
   {
    "code": "096770",
@@ -14864,7 +14954,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 158200.0,
+    "trading_days": 20,
+    "return_pct": 41.25
+   }
   },
   {
    "code": "121600",
@@ -14879,7 +14974,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 55400.0,
+    "trading_days": 20,
+    "return_pct": 8.84
+   }
   },
   {
    "code": "240810",
@@ -14894,7 +14994,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 123600.0,
+    "trading_days": 20,
+    "return_pct": 9.67
+   }
   },
   {
    "code": "247540",
@@ -14909,7 +15014,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 110200.0,
+    "trading_days": 20,
+    "return_pct": -6.61
+   }
   },
   {
    "code": "278280",
@@ -14924,7 +15034,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 35700.0,
+    "trading_days": 20,
+    "return_pct": -12.5
+   }
   },
   {
    "code": "357780",
@@ -14939,7 +15054,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 367000.0,
+    "trading_days": 20,
+    "return_pct": 7.62
+   }
   },
   {
    "code": "373220",
@@ -14954,7 +15074,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 361000.0,
+    "trading_days": 20,
+    "return_pct": -2.56
+   }
   },
   {
    "code": "399720",
@@ -14969,7 +15094,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 45450.0,
+    "trading_days": 20,
+    "return_pct": -1.3
+   }
   },
   {
    "code": "403870",
@@ -14984,7 +15114,12 @@
    "backfilled": true,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-09-28",
+    "close": 55800.0,
+    "trading_days": 20,
+    "return_pct": 10.5
+   }
   },
   {
    "code": "000660",
@@ -22679,6 +22814,411 @@
    "backfilled": false,
    "note": "HPSP closed at ₩55,600, placing the stock at the 50.1% percentile of its 52-week range of ₩27,600 to ₩83,500 following a 20-day gain of 14.64%. The spot price stood 5.30% above its 20-day moving average of ₩52,800 and 24.33% above its 60-day moving average of ₩44,718. Institutional and broker flow data were unavailable at the time of the close.",
    "note_post": "2026-09-27-hpsp",
+   "verified": null
+  },
+  {
+   "code": "000660",
+   "date": "2026-09-28",
+   "close": 1762000.0,
+   "pos52": 55.3,
+   "vs_ma20": 0.44,
+   "vs_ma60": -0.74,
+   "r20": 1.85,
+   "flow5_f": -1455447,
+   "flow5_i": -54979,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000990",
+   "date": "2026-09-28",
+   "close": 126100.0,
+   "pos52": 44.1,
+   "vs_ma20": 13.77,
+   "vs_ma60": 21.87,
+   "r20": 32.18,
+   "flow5_f": 76004,
+   "flow5_i": -931,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "003670",
+   "date": "2026-09-28",
+   "close": 183300.0,
+   "pos52": 35.2,
+   "vs_ma20": -1.13,
+   "vs_ma60": 12.05,
+   "r20": -0.38,
+   "flow5_f": -167637,
+   "flow5_i": 74193,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005070",
+   "date": "2026-09-28",
+   "close": 44300.0,
+   "pos52": 43.5,
+   "vs_ma20": 9.44,
+   "vs_ma60": 15.64,
+   "r20": 8.71,
+   "flow5_f": 3303,
+   "flow5_i": 134601,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005290",
+   "date": "2026-09-28",
+   "close": 45100.0,
+   "pos52": 39.2,
+   "vs_ma20": 8.1,
+   "vs_ma60": 5.97,
+   "r20": 5.13,
+   "flow5_f": -12596,
+   "flow5_i": 203447,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005930",
+   "date": "2026-09-28",
+   "close": 270000.0,
+   "pos52": 67.8,
+   "vs_ma20": 2.88,
+   "vs_ma60": 3.42,
+   "r20": 1.5,
+   "flow5_f": 2585145,
+   "flow5_i": 6126076,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "006400",
+   "date": "2026-09-28",
+   "close": 529000.0,
+   "pos52": 64.2,
+   "vs_ma20": -3.16,
+   "vs_ma60": 9.66,
+   "r20": -7.03,
+   "flow5_f": -34300,
+   "flow5_i": -143437,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "011790",
+   "date": "2026-09-28",
+   "close": 90400.0,
+   "pos52": 23.8,
+   "vs_ma20": 2.63,
+   "vs_ma60": 4.89,
+   "r20": 0.33,
+   "flow5_f": -935,
+   "flow5_i": 37741,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "020150",
+   "date": "2026-09-28",
+   "close": 42500.0,
+   "pos52": 35.9,
+   "vs_ma20": 8.39,
+   "vs_ma60": 22.94,
+   "r20": 20.74,
+   "flow5_f": -7828,
+   "flow5_i": 126651,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "036930",
+   "date": "2026-09-28",
+   "close": 209500.0,
+   "pos52": 81.7,
+   "vs_ma20": 7.27,
+   "vs_ma60": 19.14,
+   "r20": 16.97,
+   "flow5_f": 67814,
+   "flow5_i": -9290,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "039030",
+   "date": "2026-09-28",
+   "close": 468500.0,
+   "pos52": 63.7,
+   "vs_ma20": 5.17,
+   "vs_ma60": 21.89,
+   "r20": 15.25,
+   "flow5_f": 9426,
+   "flow5_i": -12296,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "042700",
+   "date": "2026-09-28",
+   "close": 234000.0,
+   "pos52": 45.1,
+   "vs_ma20": 1.18,
+   "vs_ma60": 6.45,
+   "r20": 5.41,
+   "flow5_f": 252090,
+   "flow5_i": 115552,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "058470",
+   "date": "2026-09-28",
+   "close": 71100.0,
+   "pos52": 28.7,
+   "vs_ma20": 4.44,
+   "vs_ma60": 3.25,
+   "r20": 6.6,
+   "flow5_f": -820910,
+   "flow5_i": 200177,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "064760",
+   "date": "2026-09-28",
+   "close": 280000.0,
+   "pos52": 67.6,
+   "vs_ma20": 7.2,
+   "vs_ma60": 22.43,
+   "r20": 15.46,
+   "flow5_f": -1744,
+   "flow5_i": 15444,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "066970",
+   "date": "2026-09-28",
+   "close": 114100.0,
+   "pos52": 32.9,
+   "vs_ma20": -4.29,
+   "vs_ma60": 10.78,
+   "r20": -12.1,
+   "flow5_f": -81335,
+   "flow5_i": -32244,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "067310",
+   "date": "2026-09-28",
+   "close": 45450.0,
+   "pos52": 70.9,
+   "vs_ma20": 21.15,
+   "vs_ma60": 25.46,
+   "r20": 17.29,
+   "flow5_f": 790879,
+   "flow5_i": 246976,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "086520",
+   "date": "2026-09-28",
+   "close": 81300.0,
+   "pos52": 25.1,
+   "vs_ma20": -2.59,
+   "vs_ma60": -2.53,
+   "r20": -11.63,
+   "flow5_f": -5379,
+   "flow5_i": -257036,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "095340",
+   "date": "2026-09-28",
+   "close": 205000.0,
+   "pos52": 67.4,
+   "vs_ma20": 10.3,
+   "vs_ma60": 28.15,
+   "r20": 19.74,
+   "flow5_f": -103431,
+   "flow5_i": 153640,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "096770",
+   "date": "2026-09-28",
+   "close": 158200.0,
+   "pos52": 100.0,
+   "vs_ma20": 13.7,
+   "vs_ma60": 28.73,
+   "r20": 41.25,
+   "flow5_f": 664248,
+   "flow5_i": 116098,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "121600",
+   "date": "2026-09-28",
+   "close": 55400.0,
+   "pos52": 37.5,
+   "vs_ma20": 11.2,
+   "vs_ma60": 18.27,
+   "r20": 8.84,
+   "flow5_f": -76129,
+   "flow5_i": 127776,
+   "backfilled": false,
+   "note": "Nano Materials closed at ₩55,400, positioned 11.2% above its 20-day moving average of ₩49,820 and 18.3% above its 60-day moving average of ₩46,841. This level places the stock at 37.5% of its 52-week range of ₩35,350 to ₩88,800 following an 8.84% gain over the preceding 20 trading sessions. The move was accompanied by net institutional buying of 42,956 shares and net foreign buying of 3,023 shares.",
+   "note_post": "2026-09-28-nano-materials",
+   "verified": null
+  },
+  {
+   "code": "240810",
+   "date": "2026-09-28",
+   "close": 123600.0,
+   "pos52": 57.1,
+   "vs_ma20": 5.61,
+   "vs_ma60": 9.23,
+   "r20": 9.67,
+   "flow5_f": -352439,
+   "flow5_i": -3327,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "247540",
+   "date": "2026-09-28",
+   "close": 110200.0,
+   "pos52": 12.6,
+   "vs_ma20": 1.45,
+   "vs_ma60": 0.71,
+   "r20": -5.12,
+   "flow5_f": 318155,
+   "flow5_i": -104184,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "278280",
+   "date": "2026-09-28",
+   "close": 35700.0,
+   "pos52": 14.6,
+   "vs_ma20": -7.42,
+   "vs_ma60": -1.3,
+   "r20": -12.5,
+   "flow5_f": 13065,
+   "flow5_i": -32850,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "357780",
+   "date": "2026-09-28",
+   "close": 367000.0,
+   "pos52": 51.5,
+   "vs_ma20": 8.88,
+   "vs_ma60": 17.58,
+   "r20": 7.62,
+   "flow5_f": -30246,
+   "flow5_i": 46361,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "373220",
+   "date": "2026-09-28",
+   "close": 361000.0,
+   "pos52": 28.3,
+   "vs_ma20": -0.08,
+   "vs_ma60": 4.02,
+   "r20": -2.56,
+   "flow5_f": 48622,
+   "flow5_i": -62749,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "399720",
+   "date": "2026-09-28",
+   "close": 45450.0,
+   "pos52": 20.4,
+   "vs_ma20": 6.29,
+   "vs_ma60": 0.91,
+   "r20": -1.3,
+   "flow5_f": 361,
+   "flow5_i": -27138,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "403870",
+   "date": "2026-09-28",
+   "close": 55800.0,
+   "pos52": 50.0,
+   "vs_ma20": 5.15,
+   "vs_ma60": 24.7,
+   "r20": 10.5,
+   "flow5_f": 435566,
+   "flow5_i": -50878,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
    "verified": null
   }
  ]
