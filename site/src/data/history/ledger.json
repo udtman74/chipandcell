@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-03",
  "records": [
   {
    "code": "000660",
@@ -25242,8 +25242,8 @@
    "flow5_f": -108911,
    "flow5_i": 24965,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 2, 2026, ISC closed at ₩210,000 following a 6.25% single-day decline, positioning it at 69.0% of its 52-week range (₩74,000 to ₩271,000) and 22.51% below its cycle high. At this price, the stock traded 7.62% above its 20-day moving average (₩195,130) and 28.45% above its 60-day moving average (₩163,493). Over the trailing 20 trading days, ISC gained 23.17%, lagging the domestic peer median of 29.44%, while foreign and institutional flow data was unavailable at market close.",
+   "note_post": "2026-10-03-isc",
    "verified": null
   },
   {
