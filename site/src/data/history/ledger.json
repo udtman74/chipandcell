@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "records": [
   {
    "code": "000660",
@@ -25257,8 +25257,8 @@
    "flow5_f": 729333,
    "flow5_i": -272411,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 2, 2026, SK Innovation closed at ₩151,300, positioning the stock at 89.0% of its 52-week trading range of ₩89,500 to ₩158,900 after a 15.06% gain over the preceding 20 trading days. The price stood 5.69% above its 20-day moving average of ₩143,155 and 19.77% above its 60-day moving average of ₩126,323. Trading flow breakdown for the session was unavailable, and the stock's 20-day advance outpaced the domestic battery peer median return of 8.75% by 631 basis points.",
+   "note_post": "2026-10-04-sk-innovation",
    "verified": null
   },
   {
