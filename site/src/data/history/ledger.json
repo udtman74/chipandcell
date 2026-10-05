@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "records": [
   {
    "code": "000660",
@@ -25032,8 +25032,8 @@
    "flow5_f": 18097,
    "flow5_i": 169798,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 2, 2026, Cosmo AM&T closed at ₩47,100, positioning the stock at 50.9% of its 52-week trading range of ₩28,000 to ₩65,500. This level stood 13.8% above its 20-day moving average (₩41,395) and 21.9% above its 60-day moving average (₩38,653), marking a trailing 20-day gain of 23.46%. The session saw net inflows from both domestic institutions and foreign investors, who purchased 58,638 and 15,997 shares, respectively.",
+   "note_post": "2026-10-05-cosmo-am-t",
    "verified": null
   },
   {
