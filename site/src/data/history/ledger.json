@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "records": [
   {
    "code": "000660",
@@ -26832,8 +26832,8 @@
    "flow5_f": 1240230,
    "flow5_i": -90431,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 8, 2026, Hana Micron closed at ₩50,200, placing it at 81.9% of its 52-week range of ₩20,400 to ₩56,800 after a 38.10% 20-day advance. The closing price stood 17.65% above its 20-day moving average of ₩42,670 and 34.26% above its 60-day moving average of ₩37,390. Daily net flows registered foreign buying of 83,078 shares against domestic institutional selling of 27,437 shares.",
+   "note_post": "2026-10-09-hana-micron",
    "verified": null
   },
   {
