@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "records": [
   {
    "code": "000660",
@@ -26697,8 +26697,8 @@
    "flow5_f": 166312,
    "flow5_i": 288589,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 8, 2026, Samsung SDI closed at ₩567,000, standing 4.83% above its 20-day moving average of ₩540,900 and 15.01% above its 60-day moving average of ₩493,000. This level positioned the stock at the 71.5th percentile of its 52-week range of ₩202,500 to ₩712,000, or 20.37% below its 52-week peak. Over the trailing 20-day window, the stock gained 4.81%, trailing the peer group median advance of 17.11% despite a 10.53% gain over the prior five sessions.",
+   "note_post": "2026-10-10-samsung-sdi",
    "verified": null
   },
   {
