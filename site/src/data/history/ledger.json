@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "records": [
   {
    "code": "000660",
@@ -26922,8 +26922,8 @@
    "flow5_f": 27674,
    "flow5_i": 125669,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 8, 2026, EcoPro BM closed at ₩126,500, placing it 13.7% above its 20-day moving average of ₩111,220 and 15.8% above its 60-day moving average of ₩109,285 following an 18.56% 20-day advance. At this price, the stock was trading at 23.4% of its 52-week range of ₩91,142 to ₩242,127. Foreign and domestic institutional trading flow data was unavailable for the session.",
+   "note_post": "2026-10-11-ecopro-bm",
    "verified": null
   },
   {
