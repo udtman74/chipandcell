@@ -3,7 +3,7 @@
  "sectors": {
   "semiconductor": {
    "label": "Semiconductor",
-   "median_r20": -1.1,
+   "median_r20": -0.82,
    "advancers": 15,
    "decliners": 0,
    "top": [

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "records": [
   {
    "code": "000660",
@@ -29562,8 +29562,8 @@
    "flow5_f": -11979,
    "flow5_i": -24120,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "ISC closed at ₩160,000 (+12.83%), positioning the stock at 43.7% of its 52-week range of ₩74,000 to ₩271,000 with a trailing 20-day return of -10.31%. The closing price remained below both the 60-day moving average of ₩167,987 and the 20-day moving average of ₩194,360. Flow data for foreign and institutional participants was unavailable for the session.",
+   "note_post": "2026-10-17-isc",
    "verified": null
   },
   {
