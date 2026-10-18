@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "records": [
   {
    "code": "000660",
@@ -29472,8 +29472,8 @@
    "flow5_f": -392099,
    "flow5_i": 81951,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 16, 2026, Hanmi Semiconductor closed at ₩210,500 (+12.75%), remaining below both its 20-day moving average of ₩240,935 and its 60-day moving average of ₩223,987. At this level, the stock traded at 36.7% of its 52-week range of ₩94,900 to ₩409,500, roughly 49% below its 52-week high following a trailing 5-day decline of 19.96%. Net institutional and foreign trading flow data for the session was unavailable.",
+   "note_post": "2026-10-18-hanmi-semiconductor",
    "verified": null
   },
   {
