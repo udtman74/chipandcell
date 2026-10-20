@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "records": [
   {
    "code": "000660",
@@ -22154,7 +22154,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 1203000.0,
+    "trading_days": 20,
+    "return_pct": -31.41
+   }
   },
   {
    "code": "000990",
@@ -22169,7 +22174,12 @@
    "backfilled": false,
    "note": "On September 16, 2026, DB HiTek closed at ₩126,000, positioning the stock at 46.2% of its 52-week range of ₩44,700 to ₩220,500 following a 34.62% 20-day advance. The closing price sits above both the 20-day moving average of ₩99,905 and the 60-day moving average of ₩105,733. Flow data on the session showed domestic institutions net buying 133,846 shares while foreign investors net sold 271,646 shares.",
    "note_post": "2026-09-16-db-hitek",
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 99800.0,
+    "trading_days": 20,
+    "return_pct": -20.79
+   }
   },
   {
    "code": "003670",
@@ -22184,7 +22194,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 178000.0,
+    "trading_days": 20,
+    "return_pct": -5.47
+   }
   },
   {
    "code": "005070",
@@ -22199,7 +22214,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 42450.0,
+    "trading_days": 20,
+    "return_pct": 2.29
+   }
   },
   {
    "code": "005290",
@@ -22214,7 +22234,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 39700.0,
+    "trading_days": 20,
+    "return_pct": -1.98
+   }
   },
   {
    "code": "005930",
@@ -22229,7 +22254,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 209500.0,
+    "trading_days": 20,
+    "return_pct": -17.19
+   }
   },
   {
    "code": "006400",
@@ -22244,7 +22274,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 552000.0,
+    "trading_days": 20,
+    "return_pct": 1.85
+   }
   },
   {
    "code": "011790",
@@ -22259,7 +22294,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 92400.0,
+    "trading_days": 20,
+    "return_pct": 7.82
+   }
   },
   {
    "code": "020150",
@@ -22274,7 +22314,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 56200.0,
+    "trading_days": 20,
+    "return_pct": 44.47
+   }
   },
   {
    "code": "036930",
@@ -22289,7 +22334,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 195100.0,
+    "trading_days": 20,
+    "return_pct": -2.45
+   }
   },
   {
    "code": "039030",
@@ -22304,7 +22354,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 415000.0,
+    "trading_days": 20,
+    "return_pct": -11.04
+   }
   },
   {
    "code": "042700",
@@ -22319,7 +22374,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 198300.0,
+    "trading_days": 20,
+    "return_pct": -12.06
+   }
   },
   {
    "code": "058470",
@@ -22334,7 +22394,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 66900.0,
+    "trading_days": 20,
+    "return_pct": 1.67
+   }
   },
   {
    "code": "064760",
@@ -22349,7 +22414,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 220000.0,
+    "trading_days": 20,
+    "return_pct": -18.06
+   }
   },
   {
    "code": "066970",
@@ -22364,7 +22434,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 98500.0,
+    "trading_days": 20,
+    "return_pct": -11.9
+   }
   },
   {
    "code": "067310",
@@ -22379,7 +22454,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 37250.0,
+    "trading_days": 20,
+    "return_pct": 5.08
+   }
   },
   {
    "code": "086520",
@@ -22394,7 +22474,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 83000.0,
+    "trading_days": 20,
+    "return_pct": 0.85
+   }
   },
   {
    "code": "095340",
@@ -22409,7 +22494,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 153800.0,
+    "trading_days": 20,
+    "return_pct": -19.14
+   }
   },
   {
    "code": "096770",
@@ -22424,7 +22514,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 149200.0,
+    "trading_days": 20,
+    "return_pct": 9.14
+   }
   },
   {
    "code": "121600",
@@ -22439,7 +22534,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 58600.0,
+    "trading_days": 20,
+    "return_pct": 15.58
+   }
   },
   {
    "code": "240810",
@@ -22454,7 +22554,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 102000.0,
+    "trading_days": 20,
+    "return_pct": -13.27
+   }
   },
   {
    "code": "247540",
@@ -22469,7 +22574,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 105500.0,
+    "trading_days": 20,
+    "return_pct": 0.96
+   }
   },
   {
    "code": "278280",
@@ -22484,7 +22594,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 36550.0,
+    "trading_days": 20,
+    "return_pct": -2.92
+   }
   },
   {
    "code": "357780",
@@ -22499,7 +22614,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 313500.0,
+    "trading_days": 20,
+    "return_pct": -5.57
+   }
   },
   {
    "code": "373220",
@@ -22514,7 +22634,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 411500.0,
+    "trading_days": 20,
+    "return_pct": 12.59
+   }
   },
   {
    "code": "399720",
@@ -22529,7 +22654,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 36550.0,
+    "trading_days": 20,
+    "return_pct": -8.4
+   }
   },
   {
    "code": "403870",
@@ -22544,7 +22674,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-10-20",
+    "close": 49300.0,
+    "trading_days": 20,
+    "return_pct": -7.33
+   }
   },
   {
    "code": "000660",
@@ -30236,6 +30371,411 @@
    "r20": 1.51,
    "flow5_f": -642824,
    "flow5_i": 224886,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000660",
+   "date": "2026-10-20",
+   "close": 1203000.0,
+   "pos52": 32.0,
+   "vs_ma20": -26.83,
+   "vs_ma60": -27.08,
+   "r20": -31.53,
+   "flow5_f": -1944824,
+   "flow5_i": -438671,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000990",
+   "date": "2026-10-20",
+   "close": 99800.0,
+   "pos52": 27.8,
+   "vs_ma20": -21.25,
+   "vs_ma60": -5.91,
+   "r20": -20.92,
+   "flow5_f": 288052,
+   "flow5_i": -278236,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "003670",
+   "date": "2026-10-20",
+   "close": 178000.0,
+   "pos52": 32.1,
+   "vs_ma20": -2.76,
+   "vs_ma60": 4.18,
+   "r20": -5.62,
+   "flow5_f": -75859,
+   "flow5_i": 79141,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005070",
+   "date": "2026-10-20",
+   "close": 42450.0,
+   "pos52": 38.5,
+   "vs_ma20": -2.57,
+   "vs_ma60": 6.77,
+   "r20": 2.29,
+   "flow5_f": 3726,
+   "flow5_i": 26394,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005290",
+   "date": "2026-10-20",
+   "close": 39700.0,
+   "pos52": 23.5,
+   "vs_ma20": -13.76,
+   "vs_ma60": -7.15,
+   "r20": -2.22,
+   "flow5_f": 88718,
+   "flow5_i": -150324,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005930",
+   "date": "2026-10-20",
+   "close": 209500.0,
+   "pos52": 44.1,
+   "vs_ma20": -17.88,
+   "vs_ma60": -17.42,
+   "r20": -17.36,
+   "flow5_f": -4139748,
+   "flow5_i": -1560601,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "006400",
+   "date": "2026-10-20",
+   "close": 552000.0,
+   "pos52": 68.3,
+   "vs_ma20": 1.28,
+   "vs_ma60": 8.62,
+   "r20": 1.1,
+   "flow5_f": -253074,
+   "flow5_i": 276281,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "011790",
+   "date": "2026-10-20",
+   "close": 92400.0,
+   "pos52": 25.7,
+   "vs_ma20": -4.58,
+   "vs_ma60": 4.8,
+   "r20": 7.44,
+   "flow5_f": -121923,
+   "flow5_i": 162500,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "020150",
+   "date": "2026-10-20",
+   "close": 56200.0,
+   "pos52": 60.3,
+   "vs_ma20": 16.46,
+   "vs_ma60": 46.34,
+   "r20": 44.66,
+   "flow5_f": -451930,
+   "flow5_i": 623474,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "036930",
+   "date": "2026-10-20",
+   "close": 195100.0,
+   "pos52": 65.7,
+   "vs_ma20": -14.24,
+   "vs_ma60": 4.52,
+   "r20": -2.69,
+   "flow5_f": -574361,
+   "flow5_i": -223703,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "039030",
+   "date": "2026-10-20",
+   "close": 415000.0,
+   "pos52": 48.6,
+   "vs_ma20": -14.63,
+   "vs_ma60": 0.3,
+   "r20": -11.32,
+   "flow5_f": 12618,
+   "flow5_i": -5722,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "042700",
+   "date": "2026-10-20",
+   "close": 198300.0,
+   "pos52": 31.6,
+   "vs_ma20": -17.06,
+   "vs_ma60": -11.26,
+   "r20": -12.45,
+   "flow5_f": -403932,
+   "flow5_i": 96354,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "058470",
+   "date": "2026-10-20",
+   "close": 66900.0,
+   "pos52": 18.1,
+   "vs_ma20": -11.55,
+   "vs_ma60": -4.1,
+   "r20": 1.36,
+   "flow5_f": -317913,
+   "flow5_i": 237618,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "064760",
+   "date": "2026-10-20",
+   "close": 220000.0,
+   "pos52": 38.9,
+   "vs_ma20": -19.37,
+   "vs_ma60": -7.56,
+   "r20": -18.22,
+   "flow5_f": 50776,
+   "flow5_i": -55074,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "066970",
+   "date": "2026-10-20",
+   "close": 98500.0,
+   "pos52": 22.3,
+   "vs_ma20": -10.45,
+   "vs_ma60": -7.06,
+   "r20": -12.13,
+   "flow5_f": -226389,
+   "flow5_i": -318307,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "067310",
+   "date": "2026-10-20",
+   "close": 37250.0,
+   "pos52": 42.8,
+   "vs_ma20": -18.01,
+   "vs_ma60": -1.88,
+   "r20": 4.78,
+   "flow5_f": -955021,
+   "flow5_i": 4415,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "086520",
+   "date": "2026-10-20",
+   "close": 83000.0,
+   "pos52": 26.3,
+   "vs_ma20": -1.62,
+   "vs_ma60": -1.34,
+   "r20": 0.73,
+   "flow5_f": -171516,
+   "flow5_i": 146799,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "095340",
+   "date": "2026-10-20",
+   "close": 153800.0,
+   "pos52": 40.5,
+   "vs_ma20": -19.74,
+   "vs_ma60": -8.84,
+   "r20": -19.05,
+   "flow5_f": 20050,
+   "flow5_i": -104462,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "096770",
+   "date": "2026-10-20",
+   "close": 149200.0,
+   "pos52": 80.2,
+   "vs_ma20": -1.2,
+   "vs_ma60": 11.16,
+   "r20": 8.98,
+   "flow5_f": -203742,
+   "flow5_i": 660123,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "121600",
+   "date": "2026-10-20",
+   "close": 58600.0,
+   "pos52": 43.5,
+   "vs_ma20": 1.61,
+   "vs_ma60": 16.5,
+   "r20": 16.04,
+   "flow5_f": -15336,
+   "flow5_i": -7281,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "240810",
+   "date": "2026-10-20",
+   "close": 102000.0,
+   "pos52": 37.2,
+   "vs_ma20": -18.9,
+   "vs_ma60": -9.74,
+   "r20": -13.49,
+   "flow5_f": -321090,
+   "flow5_i": 99218,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "247540",
+   "date": "2026-10-20",
+   "close": 105500.0,
+   "pos52": 9.5,
+   "vs_ma20": -5.59,
+   "vs_ma60": -3.31,
+   "r20": 0.76,
+   "flow5_f": -80302,
+   "flow5_i": -20489,
+   "backfilled": false,
+   "note": "On October 20, EcoPro BM dropped 8.74% to close at ₩105,500, breaking below both its 20-day moving average of ₩111,750 and 60-day moving average of ₩109,114. The decline was accompanied by net selling of 124,826 shares by domestic institutions and 60,222 shares by foreign investors. At this level, the stock sat at 9.5% of its 52-week range of ₩91,142 to ₩242,127, positioned ₩14,358 above its annual low.",
+   "note_post": "2026-10-20-ecopro-bm",
+   "verified": null
+  },
+  {
+   "code": "278280",
+   "date": "2026-10-20",
+   "close": 36550.0,
+   "pos52": 16.2,
+   "vs_ma20": 0.11,
+   "vs_ma60": 0.24,
+   "r20": -1.62,
+   "flow5_f": -43624,
+   "flow5_i": -4472,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "357780",
+   "date": "2026-10-20",
+   "close": 313500.0,
+   "pos52": 32.2,
+   "vs_ma20": -15.88,
+   "vs_ma60": -5.26,
+   "r20": -5.86,
+   "flow5_f": 32416,
+   "flow5_i": -39656,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "373220",
+   "date": "2026-10-20",
+   "close": 411500.0,
+   "pos52": 52.0,
+   "vs_ma20": 7.83,
+   "vs_ma60": 14.07,
+   "r20": 12.28,
+   "flow5_f": -212656,
+   "flow5_i": 559653,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "399720",
+   "date": "2026-10-20",
+   "close": 36550.0,
+   "pos52": 3.8,
+   "vs_ma20": -16.3,
+   "vs_ma60": -17.38,
+   "r20": -8.74,
+   "flow5_f": -49032,
+   "flow5_i": 1172,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "403870",
+   "date": "2026-10-20",
+   "close": 49300.0,
+   "pos52": 38.2,
+   "vs_ma20": -15.96,
+   "vs_ma60": 1.04,
+   "r20": -8.02,
+   "flow5_f": -423844,
+   "flow5_i": -169302,
    "backfilled": false,
    "note": null,
    "note_post": null,
