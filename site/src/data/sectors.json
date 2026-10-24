@@ -3,9 +3,9 @@
  "sectors": {
   "semiconductor": {
    "label": "Semiconductor",
-   "median_r20": -21.15,
+   "median_r20": -21.37,
    "advancers": 1,
-   "decliners": 13,
+   "decliners": 14,
    "top": [
     "005290",
     "058470",
@@ -19,7 +19,7 @@
   },
   "battery": {
    "label": "Battery",
-   "median_r20": -7.76,
+   "median_r20": -7.65,
    "advancers": 0,
    "decliners": 12,
    "top": [
@@ -28,8 +28,8 @@
     "121600"
    ],
    "bottom": [
-    "003670",
     "247540",
+    "003670",
     "066970"
    ]
   }

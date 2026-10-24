@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "records": [
   {
    "code": "000660",
@@ -32217,8 +32217,8 @@
    "flow5_f": 152859,
    "flow5_i": -238996,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On October 23, 2026, L&F Co. closed at ₩85,700, placing the stock at 13.6% of its 52-week range of ₩65,600 to ₩213,000 following a 20-day decline of 21.23%. The price sits roughly 20% below both its 20-day moving average of ₩107,145 and 60-day moving average of ₩106,357. Over the same 20-day window, the stock lagged the covered Korean battery materials peer median return of -7.65% by nearly 1,360 basis points.",
+   "note_post": "2026-10-24-l-f",
    "verified": null
   },
   {
