@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "records": [
   {
    "code": "000660",
@@ -34887,8 +34887,8 @@
    "flow5_f": 179143,
    "flow5_i": -345303,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "Leeno Industrial closed at ₩55,400, leaving it 1.84% (₩1,000) above its 52-week low of ₩54,400 and at the 1.4 percentile of its annual trading range. The price sits 22.59% below its 20-day moving average of ₩71,565 and 20.05% below its 60-day moving average of ₩69,295, reflecting a 20-day return of -24.83% against a domestic peer median return of -28.96%. Institutional and foreign investor transaction flow data was unavailable for the session.",
+   "note_post": "2026-10-31-leeno-industrial",
    "verified": null
   },
   {
