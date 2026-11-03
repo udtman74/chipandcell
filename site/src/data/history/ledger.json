@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "records": [
   {
    "code": "000660",
@@ -27554,7 +27554,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 1407000.0,
+    "trading_days": 20,
+    "return_pct": -23.78
+   }
   },
   {
    "code": "000990",
@@ -27569,7 +27574,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 97400.0,
+    "trading_days": 20,
+    "return_pct": -30.97
+   }
   },
   {
    "code": "003670",
@@ -27584,7 +27594,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 165000.0,
+    "trading_days": 20,
+    "return_pct": -11.72
+   }
   },
   {
    "code": "005070",
@@ -27599,7 +27614,12 @@
    "backfilled": false,
    "note": "On October 2, 2026, Cosmo AM&T closed at ₩47,100, positioning the stock at 50.9% of its 52-week trading range of ₩28,000 to ₩65,500. This level stood 13.8% above its 20-day moving average (₩41,395) and 21.9% above its 60-day moving average (₩38,653), marking a trailing 20-day gain of 23.46%. The session saw net inflows from both domestic institutions and foreign investors, who purchased 58,638 and 15,997 shares, respectively.",
    "note_post": "2026-10-05-cosmo-am-t",
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 35400.0,
+    "trading_days": 20,
+    "return_pct": -24.76
+   }
   },
   {
    "code": "005290",
@@ -27614,7 +27634,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 38700.0,
+    "trading_days": 20,
+    "return_pct": -26.15
+   }
   },
   {
    "code": "005930",
@@ -27629,7 +27654,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 221000.0,
+    "trading_days": 20,
+    "return_pct": -19.78
+   }
   },
   {
    "code": "006400",
@@ -27644,7 +27674,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 495500.0,
+    "trading_days": 20,
+    "return_pct": -6.33
+   }
   },
   {
    "code": "011790",
@@ -27659,7 +27694,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 70900.0,
+    "trading_days": 20,
+    "return_pct": -33.68
+   }
   },
   {
    "code": "020150",
@@ -27674,7 +27714,12 @@
    "backfilled": false,
    "note": "On October 2, 2026, Lotte Energy Materials closed at ₩51,600 (+20.70%), positioning the stock at 52.1% of its 52-week range (₩22,350 to ₩78,500) and 26.8% above its 20-day moving average. This extended its 20-day gain to 41.76%, notably outpacing the Korean battery peer group median return of 8.65%. The move was accompanied by institutional net inflows of 415,698 shares and foreign net buying of 20,362 shares on the session.",
    "note_post": "2026-10-02-lotte-energy-materials",
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 38450.0,
+    "trading_days": 20,
+    "return_pct": -25.48
+   }
   },
   {
    "code": "036930",
@@ -27689,7 +27734,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 156400.0,
+    "trading_days": 20,
+    "return_pct": -34.15
+   }
   },
   {
    "code": "039030",
@@ -27704,7 +27754,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 359000.0,
+    "trading_days": 20,
+    "return_pct": -33.15
+   }
   },
   {
    "code": "042700",
@@ -27719,7 +27774,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 181800.0,
+    "trading_days": 20,
+    "return_pct": -33.04
+   }
   },
   {
    "code": "058470",
@@ -27734,7 +27794,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 53800.0,
+    "trading_days": 20,
+    "return_pct": -36.71
+   }
   },
   {
    "code": "064760",
@@ -27749,7 +27814,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 177400.0,
+    "trading_days": 20,
+    "return_pct": -40.27
+   }
   },
   {
    "code": "066970",
@@ -27764,7 +27834,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 81600.0,
+    "trading_days": 20,
+    "return_pct": -28.36
+   }
   },
   {
    "code": "067310",
@@ -27779,7 +27854,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 32550.0,
+    "trading_days": 20,
+    "return_pct": -37.52
+   }
   },
   {
    "code": "086520",
@@ -27794,7 +27874,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 71000.0,
+    "trading_days": 20,
+    "return_pct": -20.31
+   }
   },
   {
    "code": "095340",
@@ -27809,7 +27894,12 @@
    "backfilled": false,
    "note": "On October 2, 2026, ISC closed at ₩210,000 following a 6.25% single-day decline, positioning it at 69.0% of its 52-week range (₩74,000 to ₩271,000) and 22.51% below its cycle high. At this price, the stock traded 7.62% above its 20-day moving average (₩195,130) and 28.45% above its 60-day moving average (₩163,493). Over the trailing 20 trading days, ISC gained 23.17%, lagging the domestic peer median of 29.44%, while foreign and institutional flow data was unavailable at market close.",
    "note_post": "2026-10-03-isc",
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 157500.0,
+    "trading_days": 20,
+    "return_pct": -24.64
+   }
   },
   {
    "code": "096770",
@@ -27824,7 +27914,12 @@
    "backfilled": false,
    "note": "On October 2, 2026, SK Innovation closed at ₩151,300, positioning the stock at 89.0% of its 52-week trading range of ₩89,500 to ₩158,900 after a 15.06% gain over the preceding 20 trading days. The price stood 5.69% above its 20-day moving average of ₩143,155 and 19.77% above its 60-day moving average of ₩126,323. Trading flow breakdown for the session was unavailable, and the stock's 20-day advance outpaced the domestic battery peer median return of 8.75% by 631 basis points.",
    "note_post": "2026-10-04-sk-innovation",
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 120300.0,
+    "trading_days": 20,
+    "return_pct": -20.96
+   }
   },
   {
    "code": "121600",
@@ -27839,7 +27934,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 64300.0,
+    "trading_days": 20,
+    "return_pct": 8.43
+   }
   },
   {
    "code": "240810",
@@ -27854,7 +27954,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 84800.0,
+    "trading_days": 20,
+    "return_pct": -39.04
+   }
   },
   {
    "code": "247540",
@@ -27869,7 +27974,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 88100.0,
+    "trading_days": 20,
+    "return_pct": -23.72
+   }
   },
   {
    "code": "278280",
@@ -27884,7 +27994,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 29900.0,
+    "trading_days": 20,
+    "return_pct": -21.63
+   }
   },
   {
    "code": "357780",
@@ -27899,7 +28014,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 285500.0,
+    "trading_days": 20,
+    "return_pct": -32.35
+   }
   },
   {
    "code": "373220",
@@ -27914,7 +28034,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 341000.0,
+    "trading_days": 20,
+    "return_pct": -7.71
+   }
   },
   {
    "code": "399720",
@@ -27929,7 +28054,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 31900.0,
+    "trading_days": 20,
+    "return_pct": -34.09
+   }
   },
   {
    "code": "403870",
@@ -27944,7 +28074,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-03",
+    "close": 40100.0,
+    "trading_days": 20,
+    "return_pct": -39.33
+   }
   },
   {
    "code": "000660",
@@ -35636,6 +35771,411 @@
    "r20": -37.93,
    "flow5_f": 111222,
    "flow5_i": -514070,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000660",
+   "date": "2026-11-03",
+   "close": 1407000.0,
+   "pos52": 38.0,
+   "vs_ma20": -0.98,
+   "vs_ma60": -12.31,
+   "r20": -23.62,
+   "flow5_f": -360959,
+   "flow5_i": -173917,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000990",
+   "date": "2026-11-03",
+   "close": 97400.0,
+   "pos52": 26.3,
+   "vs_ma20": -10.25,
+   "vs_ma60": -9.24,
+   "r20": -31.07,
+   "flow5_f": 46309,
+   "flow5_i": 42853,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "003670",
+   "date": "2026-11-03",
+   "close": 165000.0,
+   "pos52": 24.7,
+   "vs_ma20": -5.39,
+   "vs_ma60": -5.89,
+   "r20": -11.67,
+   "flow5_f": -98833,
+   "flow5_i": 94956,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005070",
+   "date": "2026-11-03",
+   "close": 35400.0,
+   "pos52": 19.7,
+   "vs_ma20": -14.54,
+   "vs_ma60": -12.98,
+   "r20": -24.84,
+   "flow5_f": -38870,
+   "flow5_i": 10154,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005290",
+   "date": "2026-11-03",
+   "close": 38700.0,
+   "pos52": 20.6,
+   "vs_ma20": -9.73,
+   "vs_ma60": -9.6,
+   "r20": -26.29,
+   "flow5_f": -151673,
+   "flow5_i": 18293,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005930",
+   "date": "2026-11-03",
+   "close": 221000.0,
+   "pos52": 47.1,
+   "vs_ma20": -4.3,
+   "vs_ma60": -11.88,
+   "r20": -19.93,
+   "flow5_f": -484842,
+   "flow5_i": 4164676,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "006400",
+   "date": "2026-11-03",
+   "close": 495500.0,
+   "pos52": 52.3,
+   "vs_ma20": -8.43,
+   "vs_ma60": -6.03,
+   "r20": -6.33,
+   "flow5_f": -562581,
+   "flow5_i": 216684,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "011790",
+   "date": "2026-11-03",
+   "close": 70900.0,
+   "pos52": 6.1,
+   "vs_ma20": -21.14,
+   "vs_ma60": -20.22,
+   "r20": -33.61,
+   "flow5_f": -147742,
+   "flow5_i": -121108,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "020150",
+   "date": "2026-11-03",
+   "close": 38450.0,
+   "pos52": 26.2,
+   "vs_ma20": -23.0,
+   "vs_ma60": -6.98,
+   "r20": -24.76,
+   "flow5_f": 240183,
+   "flow5_i": -404248,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "036930",
+   "date": "2026-11-03",
+   "close": 156400.0,
+   "pos52": 50.7,
+   "vs_ma20": -24.43,
+   "vs_ma60": -19.22,
+   "r20": -34.7,
+   "flow5_f": -182857,
+   "flow5_i": -88647,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "039030",
+   "date": "2026-11-03",
+   "close": 359000.0,
+   "pos52": 33.8,
+   "vs_ma20": -18.09,
+   "vs_ma60": -16.88,
+   "r20": -33.15,
+   "flow5_f": -52988,
+   "flow5_i": 16937,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "042700",
+   "date": "2026-11-03",
+   "close": 181800.0,
+   "pos52": 22.4,
+   "vs_ma20": -13.99,
+   "vs_ma60": -18.3,
+   "r20": -33.16,
+   "flow5_f": -219684,
+   "flow5_i": 31458,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "058470",
+   "date": "2026-11-03",
+   "close": 53800.0,
+   "pos52": 0.0,
+   "vs_ma20": -21.76,
+   "vs_ma60": -22.08,
+   "r20": -36.78,
+   "flow5_f": 71124,
+   "flow5_i": -395725,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "064760",
+   "date": "2026-11-03",
+   "close": 177400.0,
+   "pos52": 18.6,
+   "vs_ma20": -23.97,
+   "vs_ma60": -27.08,
+   "r20": -40.47,
+   "flow5_f": 64159,
+   "flow5_i": -81661,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "066970",
+   "date": "2026-11-03",
+   "close": 81600.0,
+   "pos52": 10.9,
+   "vs_ma20": -16.35,
+   "vs_ma60": -24.24,
+   "r20": -28.48,
+   "flow5_f": -93663,
+   "flow5_i": -58827,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "067310",
+   "date": "2026-11-03",
+   "close": 32550.0,
+   "pos52": 29.1,
+   "vs_ma20": -19.3,
+   "vs_ma60": -15.82,
+   "r20": -37.64,
+   "flow5_f": -598177,
+   "flow5_i": -233312,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "086520",
+   "date": "2026-11-03",
+   "close": 71000.0,
+   "pos52": 3.1,
+   "vs_ma20": -12.03,
+   "vs_ma60": -15.22,
+   "r20": -20.31,
+   "flow5_f": -255320,
+   "flow5_i": -82106,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "095340",
+   "date": "2026-11-03",
+   "close": 157500.0,
+   "pos52": 42.4,
+   "vs_ma20": -5.6,
+   "vs_ma60": -9.15,
+   "r20": -25.0,
+   "flow5_f": -33042,
+   "flow5_i": 44757,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "096770",
+   "date": "2026-11-03",
+   "close": 120300.0,
+   "pos52": 41.4,
+   "vs_ma20": -17.7,
+   "vs_ma60": -12.45,
+   "r20": -20.49,
+   "flow5_f": 280794,
+   "flow5_i": -390675,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "121600",
+   "date": "2026-11-03",
+   "close": 64300.0,
+   "pos52": 54.2,
+   "vs_ma20": 6.31,
+   "vs_ma60": 20.04,
+   "r20": 8.25,
+   "flow5_f": -159603,
+   "flow5_i": 268111,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "240810",
+   "date": "2026-11-03",
+   "close": 84800.0,
+   "pos52": 22.2,
+   "vs_ma20": -21.09,
+   "vs_ma60": -24.61,
+   "r20": -39.17,
+   "flow5_f": 106477,
+   "flow5_i": -151141,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "247540",
+   "date": "2026-11-03",
+   "close": 88100.0,
+   "pos52": 0.0,
+   "vs_ma20": -16.12,
+   "vs_ma60": -18.29,
+   "r20": -23.79,
+   "flow5_f": -134384,
+   "flow5_i": -207060,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "278280",
+   "date": "2026-11-03",
+   "close": 29900.0,
+   "pos52": 3.2,
+   "vs_ma20": -13.25,
+   "vs_ma60": -18.04,
+   "r20": -21.63,
+   "flow5_f": -9052,
+   "flow5_i": -374,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "357780",
+   "date": "2026-11-03",
+   "close": 285500.0,
+   "pos52": 22.1,
+   "vs_ma20": -15.61,
+   "vs_ma60": -15.56,
+   "r20": -33.06,
+   "flow5_f": -28,
+   "flow5_i": -7944,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "373220",
+   "date": "2026-11-03",
+   "close": 341000.0,
+   "pos52": 19.0,
+   "vs_ma20": -12.24,
+   "vs_ma60": -7.56,
+   "r20": -7.59,
+   "flow5_f": -115768,
+   "flow5_i": -54108,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "399720",
+   "date": "2026-11-03",
+   "close": 31900.0,
+   "pos52": 0.0,
+   "vs_ma20": -16.11,
+   "vs_ma60": -24.72,
+   "r20": -34.23,
+   "flow5_f": 3504,
+   "flow5_i": -2899,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "403870",
+   "date": "2026-11-03",
+   "close": 40100.0,
+   "pos52": 21.6,
+   "vs_ma20": -22.86,
+   "vs_ma60": -20.77,
+   "r20": -39.43,
+   "flow5_f": 219830,
+   "flow5_i": -522146,
    "backfilled": false,
    "note": null,
    "note_post": null,
