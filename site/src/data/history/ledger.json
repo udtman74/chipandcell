@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "records": [
   {
    "code": "000660",
@@ -37632,8 +37632,8 @@
    "flow5_f": 17545,
    "flow5_i": -356181,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On November 6, 2026, Hana Micron closed at ₩25,200, marking a 20-day return of -49.80% and placing the share price 7.6% above its 52-week low within a corridor of ₩22,600 to ₩56,800. At this level, the stock settled 31.97% below its 20-day moving average of ₩37,045 and 34.67% below its 60-day moving average of ₩38,572. Over the same 20-day window, the stock underperformed the domestic semiconductor peer group median return of -41.24% by 8.56 percentage points.",
+   "note_post": "2026-11-07-hana-micron",
    "verified": null
   },
   {
