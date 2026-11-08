@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "records": [
   {
    "code": "000660",
@@ -37662,8 +37662,8 @@
    "flow5_f": -28957,
    "flow5_i": 66182,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On November 6, 2026, ISC closed at ₩126,300, placing the stock at the 26.5th percentile of its 52-week range of ₩74,000 to ₩271,000 after falling 36.85% over 20 trading days. At this price, it sat 20.1% below its 20-day moving average of ₩158,000 and 27.3% below its 60-day moving average of ₩173,758. Investor-class trading flow data for the session was unavailable, while the stock's 20-day decline compared against a median 41.24% contraction across its domestic semiconductor peer group.",
+   "note_post": "2026-11-08-isc",
    "verified": null
   },
   {
