@@ -1,36 +1,36 @@
 {
- "asof": "2026-11-10",
+ "asof": "2026-11-11",
  "sectors": {
   "semiconductor": {
    "label": "Semiconductor",
-   "median_r20": -32.86,
+   "median_r20": -23.61,
    "advancers": 15,
    "decliners": 0,
    "top": [
-    "005930",
     "000660",
+    "005930",
     "042700"
    ],
    "bottom": [
-    "036930",
+    "058470",
     "067310",
     "240810"
    ]
   },
   "battery": {
    "label": "Battery",
-   "median_r20": -22.33,
+   "median_r20": -20.12,
    "advancers": 12,
    "decliners": 0,
    "top": [
     "121600",
     "003670",
-    "278280"
+    "086520"
    ],
    "bottom": [
-    "096770",
+    "066970",
     "020150",
-    "066970"
+    "096770"
    ]
   }
  }
