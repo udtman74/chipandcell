@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "records": [
   {
    "code": "000660",
@@ -31874,7 +31874,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 1222000.0,
+    "trading_days": 20,
+    "return_pct": -3.63
+   }
   },
   {
    "code": "000990",
@@ -31889,7 +31894,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 82200.0,
+    "trading_days": 20,
+    "return_pct": -23.46
+   }
   },
   {
    "code": "003670",
@@ -31904,7 +31914,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 173200.0,
+    "trading_days": 20,
+    "return_pct": 0.76
+   }
   },
   {
    "code": "005070",
@@ -31919,7 +31934,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 35500.0,
+    "trading_days": 20,
+    "return_pct": -13.94
+   }
   },
   {
    "code": "005290",
@@ -31934,7 +31954,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 37200.0,
+    "trading_days": 20,
+    "return_pct": -11.0
+   }
   },
   {
    "code": "005930",
@@ -31949,7 +31974,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 207000.0,
+    "trading_days": 20,
+    "return_pct": -4.17
+   }
   },
   {
    "code": "006400",
@@ -31964,7 +31994,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 478000.0,
+    "trading_days": 20,
+    "return_pct": -9.98
+   }
   },
   {
    "code": "011790",
@@ -31979,7 +32014,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 73900.0,
+    "trading_days": 20,
+    "return_pct": -20.45
+   }
   },
   {
    "code": "020150",
@@ -31994,7 +32034,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 37800.0,
+    "trading_days": 20,
+    "return_pct": -23.71
+   }
   },
   {
    "code": "036930",
@@ -32009,7 +32054,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 173300.0,
+    "trading_days": 20,
+    "return_pct": -17.28
+   }
   },
   {
    "code": "039030",
@@ -32024,7 +32074,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 357000.0,
+    "trading_days": 20,
+    "return_pct": -19.96
+   }
   },
   {
    "code": "042700",
@@ -32039,7 +32094,12 @@
    "backfilled": false,
    "note": "On October 16, 2026, Hanmi Semiconductor closed at ₩210,500 (+12.75%), remaining below both its 20-day moving average of ₩240,935 and its 60-day moving average of ₩223,987. At this level, the stock traded at 36.7% of its 52-week range of ₩94,900 to ₩409,500, roughly 49% below its 52-week high following a trailing 5-day decline of 19.96%. Net institutional and foreign trading flow data for the session was unavailable.",
    "note_post": "2026-10-18-hanmi-semiconductor",
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 181500.0,
+    "trading_days": 20,
+    "return_pct": -13.37
+   }
   },
   {
    "code": "058470",
@@ -32054,7 +32114,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 51800.0,
+    "trading_days": 20,
+    "return_pct": -27.04
+   }
   },
   {
    "code": "064760",
@@ -32069,7 +32134,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 187600.0,
+    "trading_days": 20,
+    "return_pct": -22.0
+   }
   },
   {
    "code": "066970",
@@ -32084,7 +32154,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 79200.0,
+    "trading_days": 20,
+    "return_pct": -16.1
+   }
   },
   {
    "code": "067310",
@@ -32099,7 +32174,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 28050.0,
+    "trading_days": 20,
+    "return_pct": -31.59
+   }
   },
   {
    "code": "086520",
@@ -32114,7 +32194,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 72700.0,
+    "trading_days": 20,
+    "return_pct": -10.8
+   }
   },
   {
    "code": "095340",
@@ -32129,7 +32214,12 @@
    "backfilled": false,
    "note": "ISC closed at ₩160,000 (+12.83%), positioning the stock at 43.7% of its 52-week range of ₩74,000 to ₩271,000 with a trailing 20-day return of -10.31%. The closing price remained below both the 60-day moving average of ₩167,987 and the 20-day moving average of ₩194,360. Flow data for foreign and institutional participants was unavailable for the session.",
    "note_post": "2026-10-17-isc",
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 153000.0,
+    "trading_days": 20,
+    "return_pct": -4.43
+   }
   },
   {
    "code": "096770",
@@ -32144,7 +32234,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 109100.0,
+    "trading_days": 20,
+    "return_pct": -28.32
+   }
   },
   {
    "code": "121600",
@@ -32159,7 +32254,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 73800.0,
+    "trading_days": 20,
+    "return_pct": 28.57
+   }
   },
   {
    "code": "240810",
@@ -32174,7 +32274,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 77900.0,
+    "trading_days": 20,
+    "return_pct": -28.07
+   }
   },
   {
    "code": "247540",
@@ -32189,7 +32294,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 91300.0,
+    "trading_days": 20,
+    "return_pct": -14.19
+   }
   },
   {
    "code": "278280",
@@ -32204,7 +32314,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 30700.0,
+    "trading_days": 20,
+    "return_pct": -10.1
+   }
   },
   {
    "code": "357780",
@@ -32219,7 +32334,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 297000.0,
+    "trading_days": 20,
+    "return_pct": -12.0
+   }
   },
   {
    "code": "373220",
@@ -32234,7 +32354,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 323500.0,
+    "trading_days": 20,
+    "return_pct": -19.43
+   }
   },
   {
    "code": "399720",
@@ -32249,7 +32374,12 @@
    "backfilled": false,
    "note": null,
    "note_post": null,
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 38650.0,
+    "trading_days": 20,
+    "return_pct": 1.18
+   }
   },
   {
    "code": "403870",
@@ -32264,7 +32394,12 @@
    "backfilled": false,
    "note": "On October 16, 2026, HPSP closed at ₩54,200 (+13.63%) on net purchases of 70,689 shares by institutions and 11,688 shares by foreign investors following a five-day decline of 15.31%. At this level, the stock sat 7.8% below its 20-day moving average of ₩58,815 and 12.0% above its 60-day moving average of ₩48,376. This placed the price at the 47.1% percentile of its 52-week trading corridor of ₩28,150 to ₩83,500.",
    "note_post": "2026-10-16-hpsp",
-   "verified": null
+   "verified": {
+    "date": "2026-11-13",
+    "close": 40400.0,
+    "trading_days": 20,
+    "return_pct": -25.6
+   }
   },
   {
    "code": "000660",
@@ -39956,6 +40091,411 @@
    "r20": -16.98,
    "flow5_f": -613520,
    "flow5_i": 417749,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000660",
+   "date": "2026-11-13",
+   "close": 1222000.0,
+   "pos52": 29.3,
+   "vs_ma20": -6.64,
+   "vs_ma60": -22.02,
+   "r20": -3.4,
+   "flow5_f": -865241,
+   "flow5_i": 234916,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "000990",
+   "date": "2026-11-13",
+   "close": 82200.0,
+   "pos52": 17.2,
+   "vs_ma20": -12.56,
+   "vs_ma60": -22.88,
+   "r20": -22.82,
+   "flow5_f": -633182,
+   "flow5_i": -61671,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "003670",
+   "date": "2026-11-13",
+   "close": 173200.0,
+   "pos52": 29.4,
+   "vs_ma20": 2.55,
+   "vs_ma60": -2.08,
+   "r20": 0.81,
+   "flow5_f": -2545,
+   "flow5_i": 196626,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005070",
+   "date": "2026-11-13",
+   "close": 35500.0,
+   "pos52": 20.0,
+   "vs_ma20": -5.45,
+   "vs_ma60": -11.58,
+   "r20": -13.94,
+   "flow5_f": 31952,
+   "flow5_i": 18168,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005290",
+   "date": "2026-11-13",
+   "close": 37200.0,
+   "pos52": 16.3,
+   "vs_ma20": -2.53,
+   "vs_ma60": -11.3,
+   "r20": -10.68,
+   "flow5_f": 4795,
+   "flow5_i": 162638,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "005930",
+   "date": "2026-11-13",
+   "close": 207000.0,
+   "pos52": 41.9,
+   "vs_ma20": -3.56,
+   "vs_ma60": -15.49,
+   "r20": -4.61,
+   "flow5_f": 5883969,
+   "flow5_i": 103062,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "006400",
+   "date": "2026-11-13",
+   "close": 478000.0,
+   "pos52": 47.9,
+   "vs_ma20": -5.93,
+   "vs_ma60": -9.56,
+   "r20": -9.81,
+   "flow5_f": 88219,
+   "flow5_i": 14859,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "011790",
+   "date": "2026-11-13",
+   "close": 73900.0,
+   "pos52": 9.8,
+   "vs_ma20": -5.0,
+   "vs_ma60": -15.03,
+   "r20": -20.28,
+   "flow5_f": -47471,
+   "flow5_i": 139915,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "020150",
+   "date": "2026-11-13",
+   "close": 37800.0,
+   "pos52": 25.0,
+   "vs_ma20": -12.36,
+   "vs_ma60": -9.58,
+   "r20": -24.17,
+   "flow5_f": -94325,
+   "flow5_i": 188382,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "036930",
+   "date": "2026-11-13",
+   "close": 173300.0,
+   "pos52": 57.2,
+   "vs_ma20": 0.49,
+   "vs_ma60": -10.72,
+   "r20": -18.06,
+   "flow5_f": -534533,
+   "flow5_i": 311246,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "039030",
+   "date": "2026-11-13",
+   "close": 357000.0,
+   "pos52": 32.0,
+   "vs_ma20": -5.54,
+   "vs_ma60": -16.78,
+   "r20": -19.87,
+   "flow5_f": -129414,
+   "flow5_i": 88731,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "042700",
+   "date": "2026-11-13",
+   "close": 181500.0,
+   "pos52": 22.3,
+   "vs_ma20": -2.57,
+   "vs_ma60": -16.59,
+   "r20": -13.78,
+   "flow5_f": 247971,
+   "flow5_i": -38719,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "058470",
+   "date": "2026-11-13",
+   "close": 51800.0,
+   "pos52": 7.3,
+   "vs_ma20": -9.98,
+   "vs_ma60": -22.18,
+   "r20": -26.94,
+   "flow5_f": 58822,
+   "flow5_i": -73644,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "064760",
+   "date": "2026-11-13",
+   "close": 187600.0,
+   "pos52": 23.5,
+   "vs_ma20": -2.91,
+   "vs_ma60": -21.32,
+   "r20": -21.18,
+   "flow5_f": -10364,
+   "flow5_i": -18094,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "066970",
+   "date": "2026-11-13",
+   "close": 79200.0,
+   "pos52": 9.2,
+   "vs_ma20": -7.13,
+   "vs_ma60": -25.08,
+   "r20": -16.1,
+   "flow5_f": 57002,
+   "flow5_i": 65926,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "067310",
+   "date": "2026-11-13",
+   "close": 28050.0,
+   "pos52": 15.9,
+   "vs_ma20": -14.86,
+   "vs_ma60": -26.05,
+   "r20": -31.25,
+   "flow5_f": -737838,
+   "flow5_i": 95933,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "086520",
+   "date": "2026-11-13",
+   "close": 72700.0,
+   "pos52": 10.1,
+   "vs_ma20": -1.73,
+   "vs_ma60": -10.47,
+   "r20": -10.8,
+   "flow5_f": -217539,
+   "flow5_i": 453082,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "095340",
+   "date": "2026-11-13",
+   "close": 153000.0,
+   "pos52": 40.1,
+   "vs_ma20": 1.64,
+   "vs_ma60": -11.42,
+   "r20": -4.37,
+   "flow5_f": -172184,
+   "flow5_i": 155065,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "096770",
+   "date": "2026-11-13",
+   "close": 109100.0,
+   "pos52": 26.3,
+   "vs_ma20": -14.86,
+   "vs_ma60": -19.97,
+   "r20": -28.13,
+   "flow5_f": 110391,
+   "flow5_i": -408163,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "121600",
+   "date": "2026-11-13",
+   "close": 73800.0,
+   "pos52": 71.9,
+   "vs_ma20": 15.6,
+   "vs_ma60": 31.02,
+   "r20": 29.02,
+   "flow5_f": -66798,
+   "flow5_i": 283066,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "240810",
+   "date": "2026-11-13",
+   "close": 77900.0,
+   "pos52": 16.7,
+   "vs_ma20": -11.19,
+   "vs_ma60": -28.34,
+   "r20": -28.27,
+   "flow5_f": -280960,
+   "flow5_i": 73971,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "247540",
+   "date": "2026-11-13",
+   "close": 91300.0,
+   "pos52": 9.3,
+   "vs_ma20": -2.24,
+   "vs_ma60": -13.11,
+   "r20": -14.27,
+   "flow5_f": -236178,
+   "flow5_i": 431602,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "278280",
+   "date": "2026-11-13",
+   "close": 30700.0,
+   "pos52": 5.5,
+   "vs_ma20": -3.67,
+   "vs_ma60": -14.01,
+   "r20": -9.97,
+   "flow5_f": -951,
+   "flow5_i": 4252,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "357780",
+   "date": "2026-11-13",
+   "close": 297000.0,
+   "pos52": 26.2,
+   "vs_ma20": 0.78,
+   "vs_ma60": -10.92,
+   "r20": -11.34,
+   "flow5_f": -19174,
+   "flow5_i": 19308,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "373220",
+   "date": "2026-11-13",
+   "close": 323500.0,
+   "pos52": 12.5,
+   "vs_ma20": -10.71,
+   "vs_ma60": -11.6,
+   "r20": -19.83,
+   "flow5_f": -59118,
+   "flow5_i": 39096,
+   "backfilled": false,
+   "note": null,
+   "note_post": null,
+   "verified": null
+  },
+  {
+   "code": "399720",
+   "date": "2026-11-13",
+   "close": 38650.0,
+   "pos52": 21.8,
+   "vs_ma20": 16.38,
+   "vs_ma60": -3.9,
+   "r20": 0.0,
+   "flow5_f": -18412,
+   "flow5_i": 10011,
+   "backfilled": false,
+   "note": "On November 13, 2026, Gaonchips closed limit-up at ₩38,650 (+29.70%), clearing its 20-day moving average of ₩33,210 while remaining just below its 60-day moving average of ₩40,217. This closing price placed the stock at 21.8% of its 52-week range (₩27,150 to ₩79,900), bringing its 20-day return to flat (+0.00%) and 60-day return to -20.80%. Session flows showed domestic institutions net buying 5,162 shares while foreign investors net sold 20,117 shares into the advance.",
+   "note_post": "2026-11-13-gaonchips",
+   "verified": null
+  },
+  {
+   "code": "403870",
+   "date": "2026-11-13",
+   "close": 40400.0,
+   "pos52": 22.1,
+   "vs_ma20": -6.38,
+   "vs_ma60": -20.21,
+   "r20": -25.05,
+   "flow5_f": -632326,
+   "flow5_i": 368135,
    "backfilled": false,
    "note": null,
    "note_post": null,
