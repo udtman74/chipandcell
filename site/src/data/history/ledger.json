@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "records": [
   {
    "code": "000660",
@@ -40302,8 +40302,8 @@
    "flow5_f": -10364,
    "flow5_i": -18094,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On November 13, 2026, TCK closed at ₩189,900, marking a 31.69% 5-day rebound but leaving the stock down 20.21% over 20 sessions and at 24.6% of its 52-week range between ₩138,200 and ₩348,500. At this close, the stock remained below both its 20-day moving average of ₩193,335 and its 60-day moving average of ₩238,462. Investor flow breakdown across retail, institutional, and foreign participants was unavailable for the session.",
+   "note_post": "2026-11-14-tck",
    "verified": null
   },
   {
