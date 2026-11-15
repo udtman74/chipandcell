@@ -1,12 +1,19 @@
-"""일 1건 심층 글 생성: 이벤트(|pct|>=5%) 우선, 평시 로테이션 큐."""
+"""일 1건 심층 글 생성: 이벤트(|pct|>=5%) 우선, 평시 로테이션 큐.
+
+LLM 실패는 조용히 넘기지 않는다(2026-11-15 수정): 사유를 pipeline/state/status.json에
+남기고 종료 코드 1로 끝나 run_daily.sh가 실패 단계로 집계하게 한다. 예전에는 print 후
+return 해서 2주간 평일 6일 심층 글이 알림 없이 사라졌다. 블로그 관련 텔레그램은 설계상
+금지이므로 외부 알림은 쓰지 않는다.
+"""
 import json
 import os
 import re
 from datetime import datetime, timedelta
 
-from pipeline.tickers import TICKERS
-from pipeline.llm import analyze
+from pipeline import status as runstatus
+from pipeline.llm import analyze, analyze_detail
 from pipeline.post_common import frontmatter, md_table, fmt_pct, fmt_won, DISCLAIMER, market_line
+from pipeline.tickers import TICKERS
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(_DIR, "..", "site", "src", "data")
@@ -37,17 +44,18 @@ def pick_target(stocks, state, today):
     return code
 
 
-def _load_state():
+def _load_state(path=None):
     try:
-        with open(STATE) as f:
+        with open(path or STATE) as f:
             return json.load(f)
     except Exception:
         return {"queue": [t[0] for t in TICKERS], "last_events": {}}
 
 
-def _save_state(state):
-    os.makedirs(os.path.dirname(STATE), exist_ok=True)
-    with open(STATE, "w") as f:
+def _save_state(state, path=None):
+    path = path or STATE
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
         json.dump(state, f, ensure_ascii=False, indent=1)
 
 
@@ -96,35 +104,53 @@ def render_post(code, s, analysis, today):
         table, analysis.strip(), DISCLAIMER]) + "\n"
 
 
-def run(ticker=None):
-    """ticker 지정 시 로테이션·상태 무시하고 해당 종목 글 생성(특집용)."""
-    with open(os.path.join(DATA, "stocks.json")) as f:
+def run(ticker=None, today=None, data_dir=None, posts_dir=None, state_path=None,
+        llm=None, status_path=None):
+    """ticker 지정 시 로테이션·상태 무시하고 해당 종목 글 생성(특집용).
+
+    llm: prompt -> (text|None, provider|None, error|None). 기본은 pipeline.llm.analyze_detail.
+    """
+    data_dir = data_dir or DATA
+    posts_dir = posts_dir or POSTS
+    llm = llm or analyze_detail
+    with open(os.path.join(data_dir, "stocks.json")) as f:
         stocks_doc = json.load(f)
-    with open(os.path.join(DATA, "sectors.json")) as f:
+    with open(os.path.join(data_dir, "sectors.json")) as f:
         sectors = json.load(f)["sectors"]
-    with open(os.path.join(DATA, "market.json")) as f:
+    with open(os.path.join(data_dir, "market.json")) as f:
         market = json.load(f)
     stocks = stocks_doc["stocks"]
-    today = datetime.now().strftime("%Y-%m-%d")
-    state = _load_state()
+    today = today or datetime.now().strftime("%Y-%m-%d")
+    state = _load_state(state_path)
     code = ticker if ticker else pick_target(stocks, state, today)
     if code not in stocks:
+        runstatus.record("gen_deep_dive", "failed", reason=f"unknown ticker {code}",
+                         path=status_path)
         raise SystemExit(f"unknown ticker {code}")
     s = stocks[code]
-    out = os.path.join(POSTS, f"{today}-{_slug(s['name_en'])}.md")
+    out = os.path.join(posts_dir, f"{today}-{_slug(s['name_en'])}.md")
     if os.path.exists(out):
         print(f"deep dive skip: {out} already exists")
+        runstatus.record("gen_deep_dive", "skipped", reason="post already exists",
+                         extra={"code": code, "post": os.path.basename(out)}, path=status_path)
         return
-    analysis = analyze(build_prompt(code, s, sectors[s["sector"]], market))
+    analysis, provider, error = llm(build_prompt(code, s, sectors[s["sector"]], market))
     if not analysis:
-        print("deep dive skip: LLM unavailable (gemini+ollama failed)")
-        return
-    os.makedirs(POSTS, exist_ok=True)
+        # 조용한 실패 금지: 상태 파일 + 비0 종료 코드. run_daily.sh가 이 단계를 실패로 집계한다.
+        reason = error or "LLM returned no text (gemini+ollama)"
+        print(f"deep dive FAILED {code} {s['name_en']}: {reason}")
+        runstatus.record("gen_deep_dive", "failed", reason=reason,
+                         extra={"code": code, "date": today}, path=status_path)
+        raise SystemExit(1)
+    os.makedirs(posts_dir, exist_ok=True)
     with open(out, "w") as f:
         f.write(render_post(code, s, analysis, today))
     if not ticker:
-        _save_state(state)
-    print(f"deep dive OK {code} {s['name_en']} -> {os.path.basename(out)}")
+        _save_state(state, state_path)
+    print(f"deep dive OK {code} {s['name_en']} ({provider}) -> {os.path.basename(out)}")
+    runstatus.record("gen_deep_dive", "ok", extra={"code": code, "provider": provider,
+                                                   "post": os.path.basename(out)},
+                     path=status_path)
 
     # 관찰 노트를 장부에 기록(소급 불가 자산 — UI보다 먼저 축적한다).
     # 실패해도 글 발행에는 영향을 주지 않는다.
