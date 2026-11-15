@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "records": [
   {
    "code": "000660",
@@ -40452,8 +40452,8 @@
    "flow5_f": -19174,
    "flow5_i": 19308,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On November 13, 2026, Soulbrain closed at ₩299,000, extending a five-day gain of 18.42% to move above its 20-day moving average of ₩294,800. This placed the stock at the 26.9th percentile of its 52-week range of ₩224,500 to ₩501,000 and 10.3% below its 60-day moving average of ₩333,450. Trailing 20-day performance stood at -10.75% versus a -17.64% peer median, with institutional and foreign net flow data unavailable for the session.",
+   "note_post": "2026-11-15-soulbrain",
    "verified": null
   },
   {
