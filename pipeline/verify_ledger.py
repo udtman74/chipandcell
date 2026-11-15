@@ -5,8 +5,8 @@
 """
 from datetime import datetime
 
-import FinanceDataReader as fdr
-
+from pipeline.metrics import normalize
+from pipeline.prices import read as read_prices
 from pipeline.record_ledger import load, save
 
 HORIZON = 20
@@ -29,7 +29,7 @@ def run(horizon=HORIZON):
     filled = 0
     for code in sorted({r["code"] for r in pending}):
         try:
-            df = fdr.DataReader(code).dropna(subset=["Close"])
+            df = normalize(read_prices(code))
         except Exception as e:
             print(f"  ⚠️ {code} price fetch failed: {e!r}")
             continue

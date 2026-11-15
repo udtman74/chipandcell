@@ -9,11 +9,10 @@ import json
 import os
 from datetime import datetime
 
-import FinanceDataReader as fdr
-
 from pipeline.tickers import TICKERS
-from pipeline.metrics import compute
+from pipeline.metrics import compute, normalize
 from pipeline.flow_history import load as load_flows, flow5
+from pipeline.prices import read as read_prices
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 STORE = os.path.join(_DIR, "..", "site", "src", "data", "history", "ledger.json")
@@ -79,7 +78,7 @@ def run(backfill_days=30):
     added = 0
     for code, _en, _kr, _sec in TICKERS:
         try:
-            df = fdr.DataReader(code)
+            df = normalize(read_prices(code))       # 중복 날짜 병합 — 장부 거래일 달력이 밀리지 않게
         except Exception as e:
             print(f"  ⚠️ {code} price fetch failed: {e!r}")
             continue

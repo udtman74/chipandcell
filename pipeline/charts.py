@@ -7,10 +7,9 @@
 import json
 import os
 
-import FinanceDataReader as fdr
-
-from pipeline.tickers import TICKERS, SECTOR_LABELS
 from pipeline.flow_history import load as load_flows
+from pipeline.prices import read as read_prices
+from pipeline.tickers import TICKERS, SECTOR_LABELS
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(_DIR, "..", "site", "src", "data")
@@ -148,7 +147,7 @@ def build_all():
         if not s or s["date"] != asof:      # 스테일 가드: 최신이 아니면 그리지 않는다
             continue
         try:
-            df = fdr.DataReader(code).tail(60)
+            df = read_prices(code).tail(60)
         except Exception as e:
             print(f"  ⚠️ {code} chart skipped: {e!r}")
             continue
