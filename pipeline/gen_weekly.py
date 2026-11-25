@@ -1,10 +1,15 @@
-"""금요일 주간 섹터 리뷰 생성. 금요일 아니면 정상 종료(no-op)."""
+"""금요일 주간 섹터 리뷰 생성. 금요일 아니면 정상 종료(no-op).
+
+LLM 실패는 조용히 넘기지 않는다(2026-11-15 수정): 사유를 pipeline/state/status.json에
+남기고 종료 코드 1로 끝난다. 예전에는 주간 리뷰 2회(11-06, 11-13)가 표시 없이 누락됐다.
+"""
 import argparse
 import json
 import os
 from datetime import datetime
 
-from pipeline.llm import analyze
+from pipeline import status as runstatus
+from pipeline.llm import analyze_detail
 from pipeline.post_common import frontmatter, md_table, fmt_pct, DISCLAIMER, market_line
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
@@ -40,26 +45,37 @@ Rules:
 - Plain markdown, section headings with ##."""
 
 
-def run(force=False):
-    today = datetime.now()
+def run(force=False, today=None, data_dir=None, posts_dir=None, llm=None,
+        status_path=None):
+    data_dir = data_dir or DATA
+    posts_dir = posts_dir or POSTS
+    llm = llm or analyze_detail
+    today = today or datetime.now()
     if today.weekday() != 4 and not force:
         print("weekly skip: not friday")
+        runstatus.record("gen_weekly", "skipped", reason="not friday",
+                         extra={"date": today.strftime("%Y-%m-%d")}, path=status_path)
         return
     date = today.strftime("%Y-%m-%d")
-    out = os.path.join(POSTS, f"{date}-weekly-review.md")
+    out = os.path.join(posts_dir, f"{date}-weekly-review.md")
     if os.path.exists(out):
         print("weekly skip: already exists")
+        runstatus.record("gen_weekly", "skipped", reason="post already exists",
+                         extra={"date": date}, path=status_path)
         return
-    with open(os.path.join(DATA, "stocks.json")) as f:
+    with open(os.path.join(data_dir, "stocks.json")) as f:
         stocks = json.load(f)["stocks"]
-    with open(os.path.join(DATA, "sectors.json")) as f:
+    with open(os.path.join(data_dir, "sectors.json")) as f:
         sectors = json.load(f)["sectors"]
-    with open(os.path.join(DATA, "market.json")) as f:
+    with open(os.path.join(data_dir, "market.json")) as f:
         market = json.load(f)
-    analysis = analyze(build_prompt(stocks, sectors, market))
+    analysis, provider, error = llm(build_prompt(stocks, sectors, market))
     if not analysis:
-        print("weekly skip: LLM unavailable")
-        return
+        reason = error or "LLM returned no text (gemini+ollama)"
+        print(f"weekly FAILED {date}: {reason}")
+        runstatus.record("gen_weekly", "failed", reason=reason, extra={"date": date},
+                         path=status_path)
+        raise SystemExit(1)
     rows = []
     for sec in ("semiconductor", "battery"):
         w, l = _winners_losers(stocks, sec)
@@ -72,9 +88,13 @@ def run(force=False):
                     "The week across Korea's semiconductor and battery sectors: winners, laggards and the index backdrop.",
                     sector="market", tags=["weekly"]),
         table, analysis.strip(), DISCLAIMER]) + "\n"
+    os.makedirs(posts_dir, exist_ok=True)
     with open(out, "w") as f:
         f.write(body)
-    print(f"weekly OK -> {os.path.basename(out)}")
+    print(f"weekly OK ({provider}) -> {os.path.basename(out)}")
+    runstatus.record("gen_weekly", "ok", extra={"date": date, "provider": provider,
+                                                "post": os.path.basename(out)},
+                     path=status_path)
 
 
 if __name__ == "__main__":

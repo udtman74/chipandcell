@@ -8,11 +8,10 @@ import json
 import os
 from datetime import datetime
 
-import FinanceDataReader as fdr
-
-from pipeline.metrics import compute
 from pipeline.llm import analyze
+from pipeline.metrics import compute
 from pipeline.post_common import frontmatter, md_table, fmt_pct, fmt_won, DISCLAIMER
+from pipeline.prices import read as read_prices
 
 _DIR = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(_DIR, "..", "site", "src", "data")
@@ -34,7 +33,7 @@ def _load():
 
 def _fetch_index(syms):
     for sym in syms:
-        df = fdr.DataReader(sym)
+        df = read_prices(sym)
         if len(df) and "Close" in df.columns:
             return compute(df)
     raise SystemExit(f"index fetch failed: {syms}")

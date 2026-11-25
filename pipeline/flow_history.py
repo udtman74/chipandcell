@@ -16,18 +16,20 @@ _DIR = os.path.dirname(os.path.abspath(__file__))
 STORE = os.path.join(_DIR, "..", "site", "src", "data", "history", "flows.json")
 
 
-def load():
+def load(path=None):
+    path = path or STORE
     try:
-        with open(STORE) as f:
+        with open(path) as f:
             return json.load(f)
     except Exception:
         return {"updated": "", "flows": {}}
 
 
-def save(store, today):
+def save(store, today, path=None):
+    path = path or STORE
     store["updated"] = today
-    os.makedirs(os.path.dirname(STORE), exist_ok=True)
-    with open(STORE, "w") as f:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
         json.dump(store, f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
