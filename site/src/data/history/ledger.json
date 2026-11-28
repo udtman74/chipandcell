@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "records": [
   {
    "code": "000660",
@@ -45747,8 +45747,8 @@
    "flow5_f": 25854,
    "flow5_i": 753501,
    "backfilled": false,
-   "note": null,
-   "note_post": null,
+   "note": "On November 27, 2026, EcoPro closed at ₩73,400, clearing its 20-day moving average of ₩69,025 while remaining below its 60-day moving average of ₩77,847. The closing price placed the stock at 10.6% of its 52-week range (₩60,100 to ₩185,000), bringing its trailing 20-day return to +3.67% and 60-day return to -19.61%. Breakdown of trading flows between foreign institutional and domestic retail participants was unavailable for the session.",
+   "note_post": "2026-11-28-ecopro",
    "verified": null
   },
   {
